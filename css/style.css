@@ -1,8 +1,69 @@
+/*variables*/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
-h1 header{
-    display: flex;
+header h1 {
+  color: grey;
 }
-#local{
-    background-color: grey;
-    margin-top: 30px;
+
+#local {
+  background-color: grey;
+  color: #0e0101;
+  margin-top: 30px;
 }
+
+#explor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#explor button {
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: white;
+  background-color: fuchsia;
+}
+
+#restaurant .palette {
+  -webkit-box-shadow: 7px 7px 13px 4px #d5d1d1;
+          box-shadow: 7px 7px 13px 4px #d5d1d1;
+  width: 28%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 30px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#restaurant .palette .test {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 117px;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  padding: 3px;
+}
+
+footer {
+  background-color: #0e0101;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

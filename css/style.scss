@@ -1,0 +1,58 @@
+/*variables*/
+$couleurprincipal: grey;
+$couleursecondaire: rgb(14, 1, 1);
+header {
+  display: flex;
+
+  h1 {
+    color: $couleurprincipal;
+  }
+}
+#local {
+  background-color: $couleurprincipal;
+  color: $couleursecondaire;
+  margin-top: 30px;
+}
+#explor {
+  display: flex;
+
+  button {
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    background-color: fuchsia ;
+  }
+}
+#restaurant {
+
+  .palette {
+    box-shadow: 7px 7px 13px 4px #d5d1d1;
+    width: 28%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+    .test {
+      object-fit: cover;
+      height: 117px;
+      width: 100%;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      padding: 3px;
+    }
+  }
+}
+footer {
+  background-color: $couleursecondaire;
+ flex-direction: column;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
