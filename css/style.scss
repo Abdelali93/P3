@@ -1,6 +1,13 @@
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
+}
 /*variables*/
-$couleurprincipal: grey;
+$couleurprincipal: rgb(206, 200, 200);
 $couleursecondaire: rgb(14, 1, 1);
+body {
+  margin: 30px;
+}
 header {
   display: flex;
 
@@ -12,22 +19,66 @@ header {
   background-color: $couleurprincipal;
   color: $couleursecondaire;
   margin-top: 30px;
+  input {
+    background-color: $couleurprincipal;
+    border: transparent;
+    margin: auto;
+  }
+  ::placeholder {
+    color: black;
+  }
 }
 #explor {
-  display: flex;
+  flex-direction: column;
+  background-color: rgb(240, 234, 234);
+  margin-top: 0;
 
+  .explorer {
+    margin: 10px;
+  }
+  h2 {
+    margin: 0;
+  }
+  p {
+    color: darkgray;
+  }
   button {
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     color: white;
-    background-color: fuchsia ;
+    background-color: fuchsia;
+  }
+}
+
+#fonction {
+  span {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(212, 83, 212);
+    color: white;
+  }
+  div {
+    box-shadow: 7px 7px 13px 4px #c4c1c1;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 20px;
+    height: 85px;
+    width: 283px;
   }
 }
 #restaurant {
-
-  .palette {
+  .palette,
+  .note,
+  .france,
+  .sens {
     box-shadow: 7px 7px 13px 4px #d5d1d1;
     width: 28%;
     border-top-right-radius: 20px;
@@ -37,7 +88,7 @@ header {
     margin-top: 30px;
     cursor: pointer;
     transition: 0.3s;
-    
+
     .test {
       object-fit: cover;
       height: 117px;
@@ -50,8 +101,10 @@ header {
 }
 footer {
   background-color: $couleursecondaire;
- flex-direction: column;
+  color: white;
+  display: flex;
   a {
+    flex-direction: column;
     color: white;
     text-decoration: none;
   }

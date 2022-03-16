@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
@@ -11,51 +13,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oh my food</title>
 </head>
+
 <body>
     <header>
-    <h1>
-        ohmy food
-    </h1>
+        <div class="logo"><img src="images/logo/ohmyfood.png"/></div>
     </header>
-    
+
     <section id="local">
         <i class="fas fa-map-marker-alt"><input type="text" placeholder="Paris, Belleville"></i>
     </section>
     <section id="explor">
-        <h2>Réservez le menu qui vous convient</h2>
-        <p>Découvrez des restaurants d'exception,séléctionnés par nos soins.</p>
-        <button name="explorer"><span>Explorer nos restaurants</span></button>
+        <div class="explorer">
+            <h2>Réservez le menu qui vous convient</h2>
+            <p>Découvrez des restaurants d'exception,séléctionnés par nos soins.</p>
+            <button name="explorer"><span>Explorer nos restaurants</span></button>
+        </div>
     </section>
 
     <section id="fonction">
-            <h2>Fonctionnement</h2>
+        <h2>Fonctionnement</h2>
 
-            <div><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</div>
+        <span>1</span><div class="choix"><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</div>
 
-            <div><i class="fa-solid fa-list"></i>Composez votre menu</div>
+        <div class="menu"><i class="fas fa-solid fa-ballot"></i>Composez votre menu</div>
 
-            <div>Dégustez au restaurant</div>
+        <div class="deguste">Dégustez au restaurant</div>
 
     </section>
 
     <section id="restaurant">
-        <div class="palette">
-            <img class="test" src="images/restaurants/lapalettedugout.jpg"/>
+        <h2>Restaurants</h2>
+        <div href="palette.html" class="palette" > 
+            <img class="test" src="images/restaurants/lapalettedugout.jpg" />
             <div class="desc">
                 <h3>La palette du goût</h3>
                 <p>Ménilmontant</p>
             </div>
 
         </div>
+        <div class="note">
+            <img class="test" src="images/restaurants/lanoteenchantee.jpg"/>
+            <div class="desc">
+                <h3>La note enchantée</h3>
+                <p>Charonne</p>
+            </div>
+        </div>
+        <div class="france">
+            <img class="test" src="images/restaurants/alafrancaise.jpg"/>
+            <div class="desc">
+                <h3>A la française</h3>
+                <p>Cité rouge</p>
+            </div>
+        </div>
+        <div class="sens">
+            <img class="test" src="images/restaurants/ledelicedessens.jpg"/>
+            <div class="desc">
+                <h3>Le délice des sens</h3>
+                <p>Folie-Méricourt</p>
+            </div>
+        </div>
     </section>
 
     <footer>
         <h3>oh my food</h3>
 
-        <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
-        <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+        <a href="#"><i class="fas fa-solid fa-utensils"></i>Proposer un restaurant</a>
+        <a href="#"><i class="fas fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
         <a href="#">Mentions légales</a>
         <a href="#">Contact</a>
     </footer>
 </body>
+
 </html>
