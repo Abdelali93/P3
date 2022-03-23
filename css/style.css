@@ -10,25 +10,24 @@ body {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-header h1 {
-  color: #cec8c8;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #local {
   background-color: #cec8c8;
   color: #0e0101;
   margin-top: 30px;
+  padding-left: 50px;
 }
 
 #local input {
   background-color: #cec8c8;
   border: transparent;
-  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #local ::-webkit-input-placeholder {
@@ -54,6 +53,10 @@ header h1 {
           flex-direction: column;
   background-color: #f0eaea;
   margin-top: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
 }
 
 #explor .explorer {
@@ -78,19 +81,20 @@ header h1 {
 }
 
 #fonction span {
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  height: 10px;
-  width: 10px;
+  margin-top: 30px;
+  width: 24px;
+  border-radius: 15px;
   background-color: #d453d4;
   color: white;
+  position: absolute;
+  left: 25px;
+  padding-left: 7px;
+  padding-bottom: 5px;
 }
 
 #fonction div {
-  -webkit-box-shadow: 7px 7px 13px 4px #c4c1c1;
-          box-shadow: 7px 7px 13px 4px #c4c1c1;
+  -webkit-box-shadow: 7px 7px 13px 4px #9b9898;
+          box-shadow: 7px 7px 13px 4px #9b9898;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -98,6 +102,7 @@ header h1 {
   margin-bottom: 20px;
   height: 85px;
   width: 283px;
+  padding: 35px;
 }
 
 #restaurant .palette,
@@ -117,6 +122,14 @@ header h1 {
   transition: 0.3s;
 }
 
+#restaurant .palette i,
+#restaurant .note i,
+#restaurant .france i,
+#restaurant .sens i {
+  position: absolute;
+  left: 50px;
+}
+
 #restaurant .palette .test,
 #restaurant .note .test,
 #restaurant .france .test,
@@ -133,17 +146,183 @@ header h1 {
 footer {
   background-color: #0e0101;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-footer a {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+footer a {
   color: white;
   text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-shadow: #c4c1c1;
+            box-shadow: #c4c1c1;
+  }
+  #local {
+    width: 100%;
+  }
+  #local i {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .explorer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/*palette*/
+.testp {
+  width: 100%;
+}
+
+.menup {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0;
+}
+
+.menup h2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menup h2 i {
+  background-color: white;
+  border-color: black;
+}
+
+.menup h2 i:hover {
+  -webkit-transform: scale(1.13);
+          transform: scale(1.13);
+  color: #de37e4;
+}
+
+.menup .entrep h4, .menup .platp h4, .menup .dessp h4 {
+  color: #c4c1c1;
+  -webkit-text-decoration: underline #77cf91;
+          text-decoration: underline #77cf91;
+}
+
+.menup .entrep .esc, .menup .entrep .foie, .menup .entrep .oeuf, .menup .entrep .filet, .menup .entrep .queue, .menup .entrep .turbot, .menup .entrep .brest, .menup .entrep .macaron, .menup .entrep .mousse, .menup .platp .esc, .menup .platp .foie, .menup .platp .oeuf, .menup .platp .filet, .menup .platp .queue, .menup .platp .turbot, .menup .platp .brest, .menup .platp .macaron, .menup .platp .mousse, .menup .dessp .esc, .menup .dessp .foie, .menup .dessp .oeuf, .menup .dessp .filet, .menup .dessp .queue, .menup .dessp .turbot, .menup .dessp .brest, .menup .dessp .macaron, .menup .dessp .mousse {
+  -webkit-box-shadow: 7px 7px 13px 4px #d5d1d1;
+          box-shadow: 7px 7px 13px 4px #d5d1d1;
+  width: 28%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 30px;
+  cursor: pointer;
+  -webkit-animation: 4s 1s 1 both apparition;
+          animation: 4s 1s 1 both apparition;
+  -webkit-animation: 4s 1s 1 both decalage;
+          animation: 4s 1s 1 both decalage;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  position: relative;
+}
+
+.menup .entrep .esc i, .menup .entrep .foie i, .menup .entrep .oeuf i, .menup .entrep .filet i, .menup .entrep .queue i, .menup .entrep .turbot i, .menup .entrep .brest i, .menup .entrep .macaron i, .menup .entrep .mousse i, .menup .platp .esc i, .menup .platp .foie i, .menup .platp .oeuf i, .menup .platp .filet i, .menup .platp .queue i, .menup .platp .turbot i, .menup .platp .brest i, .menup .platp .macaron i, .menup .platp .mousse i, .menup .dessp .esc i, .menup .dessp .foie i, .menup .dessp .oeuf i, .menup .dessp .filet i, .menup .dessp .queue i, .menup .dessp .turbot i, .menup .dessp .brest i, .menup .dessp .macaron i, .menup .dessp .mousse i {
+  position: absolute;
+  top: 7px;
+  bottom: 4px;
+  right: 0px;
+  opacity: 0;
+}
+
+.menup .entrep .esc .prix, .menup .entrep .foie .prix, .menup .entrep .oeuf .prix, .menup .entrep .filet .prix, .menup .entrep .queue .prix, .menup .entrep .turbot .prix, .menup .entrep .brest .prix, .menup .entrep .macaron .prix, .menup .entrep .mousse .prix, .menup .platp .esc .prix, .menup .platp .foie .prix, .menup .platp .oeuf .prix, .menup .platp .filet .prix, .menup .platp .queue .prix, .menup .platp .turbot .prix, .menup .platp .brest .prix, .menup .platp .macaron .prix, .menup .platp .mousse .prix, .menup .dessp .esc .prix, .menup .dessp .foie .prix, .menup .dessp .oeuf .prix, .menup .dessp .filet .prix, .menup .dessp .queue .prix, .menup .dessp .turbot .prix, .menup .dessp .brest .prix, .menup .dessp .macaron .prix, .menup .dessp .mousse .prix {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.esc:hover {
+  background-color: #77cf91;
+  padding-right: 20px;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.esc:hover i {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  top: 7px;
+  bottom: 4px;
+  right: 0px;
+  left: 0;
+  opacity: 1;
+  background-color: #77cf91;
+}
+
+@-webkit-keyframes apparition {
+  from {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  to {
+    margin-top: 200px;
+    opacity: 1;
+  }
+}
+
+@keyframes apparition {
+  from {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  to {
+    margin-top: 200px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes decalage {
+  from {
+    margin-right: 0;
+    opacity: 1;
+  }
+  to {
+    margin-right: 20px;
+    opacity: 1;
+  }
+}
+
+@keyframes decalage {
+  from {
+    margin-right: 0;
+    opacity: 1;
+  }
+  to {
+    margin-right: 20px;
+    opacity: 1;
+  }
+}
+
+.esc:hover {
+  -webkit-animation: 4s 1s 1 both decalage;
+          animation: 4s 1s 1 both decalage;
+}
+
+.esc:hover i {
+  background-color: #77cf91;
+  padding-right: 20px;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /*# sourceMappingURL=style.css.map */
