@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 /*variables*/
-$couleurprincipal: rgb(206, 200, 200);
+$couleurprincipal: rgb(223, 221, 221);
 $couleursecondaire: rgb(14, 1, 1);
 body {
   margin: 30px;
@@ -34,10 +34,7 @@ body {
   margin-top: 0;
   justify-content: center;
   padding: 50px;
-  .explorer {
-    margin: 10px;
-    border: none;
-  }
+
   h2 {
     margin: 0;
   }
@@ -45,12 +42,16 @@ body {
     color: darkgray;
   }
   button {
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 34px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 35px;
     color: white;
     background-color: fuchsia;
+    margin: 10px;
+    padding: 16px;
+    border: none;
+    box-shadow: 2px 7px 4px 2px #bcb7b7;
   }
 }
 
@@ -108,21 +109,38 @@ body {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     margin-top: 30px;
+    padding: 0;
     cursor: pointer;
     transition: 0.3s;
 
+    h3 {
+      margin-top: -10px;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+    .desc {
+      padding-left: 15px;
+    }
     i {
       position: relative;
       left: 285px;
       bottom: 17px;
       &:hover {
         transform: scale(1.13);
-        color: #de37e4;
+        background-color: #de37e4;
       }
     }
     .test {
       object-fit: cover;
-      height: 117px;
+      width: 100%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+    .testn {
+      object-fit: cover;
+      height: 250px;
       width: 100%;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
@@ -132,7 +150,7 @@ body {
       color: #338a4d;
       position: relative;
       left: 245px;
-      bottom: 101px;
+      bottom: 207px;
       border: none;
     }
   }
@@ -141,20 +159,53 @@ footer {
   background-color: $couleursecondaire;
   color: white;
   flex-direction: column;
+  display: flex;
+  padding-left: 15px;
+  margin-top: 30px;
+  padding-bottom: 20px;
   a {
     color: white;
     text-decoration: none;
+    padding-top: 5px;
   }
 }
-@media (max-width: 767px) {
-  .logo {
+@media screen and (max-width: 767px) {
+  body {
+    margin: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+  header{
+    width: 100%;
+    box-shadow: 2px 7px 4px 2px #bcb7b7;
+  .logo img {
+    padding-top: 26px;
+    width: 70%;
     justify-content: center;
     box-shadow: #c4c1c1;
   }
+}
   #local {
+    margin-top: 2px;
     width: 100%;
     i {
       justify-content: center;
+    }
+  }
+  #fonction {
+    flex-direction: column;
+  }
+  #restaurant {
+    flex-direction: column;
+    width: 100%;
+    .palette,
+    .note,
+    .france,
+    .sens {
+      margin-left: 10px;
+      margin-top: 10px;
+      width: 100%;
     }
   }
   .explorer {
@@ -162,11 +213,18 @@ footer {
   }
 }
 /*palette*/
-
-.testp {
-  width: 100%;
+#palette{
+  button { border-bottom-left-radius: 34px;
+  border-top-left-radius: 31px;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 35px;
+  color: white;
+  background-color: fuchsia;
+  margin: 10px;
+  padding: 16px;
+  border: none;
+  box-shadow: 2px 7px 4px 2px #bcb7b7;
 }
-
 .menup {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -223,10 +281,17 @@ footer {
         justify-content: flex-end;
       }
     }
-    .foie {
+    .entrep{
+      animation: 1s 1s 1 both apparition;
+    }
+    .filet,
+    .queue,
+    .turbot {
       animation: 1s 2s 1 both apparition;
     }
-    .oeuf {
+    .brest,
+    .macaron,
+    .mousse {
       animation: 1s 3s 1 both apparition;
     }
   }
@@ -278,4 +343,5 @@ footer {
   padding-right: 20px;
   opacity: 1;
   transition: 0.3s;
+}
 }
