@@ -9,7 +9,10 @@ body {
   margin: 30px;
 }
 
-header {
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -19,7 +22,12 @@ header {
   background-color: #cec8c8;
   color: #0e0101;
   margin-top: 30px;
-  padding-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #local input {
@@ -61,6 +69,7 @@ header {
 
 #explor .explorer {
   margin: 10px;
+  border: none;
 }
 
 #explor h2 {
@@ -80,29 +89,51 @@ header {
   background-color: fuchsia;
 }
 
-#fonction span {
-  margin-top: 30px;
-  width: 24px;
-  border-radius: 15px;
-  background-color: #d453d4;
-  color: white;
-  position: absolute;
-  left: 25px;
-  padding-left: 7px;
-  padding-bottom: 5px;
+#fonction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #fonction div {
-  -webkit-box-shadow: 7px 7px 13px 4px #9b9898;
-          box-shadow: 7px 7px 13px 4px #9b9898;
+  background: #f1f1f1;
+  -webkit-box-shadow: 2px 7px 4px 2px #e7e4e4;
+          box-shadow: 2px 7px 4px 2px #e7e4e4;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
   height: 85px;
-  width: 283px;
+  width: 300px;
   padding: 35px;
+}
+
+#fonction div span {
+  width: 20px;
+  border-radius: 15px;
+  background-color: #d453d4;
+  color: white;
+  position: relative;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 5px;
+  right: 42px;
+}
+
+#fonction .choix i,
+#fonction .menu i {
+  margin-left: -23px;
+  margin-right: 20px;
+  color: #b6b6b6;
+}
+
+#fonction .deguste i {
+  margin-left: -23px;
+  margin-right: 20px;
+  color: violet;
 }
 
 #restaurant .palette,
@@ -126,8 +157,18 @@ header {
 #restaurant .note i,
 #restaurant .france i,
 #restaurant .sens i {
-  position: absolute;
-  left: 50px;
+  position: relative;
+  left: 285px;
+  bottom: 17px;
+}
+
+#restaurant .palette i:hover,
+#restaurant .note i:hover,
+#restaurant .france i:hover,
+#restaurant .sens i:hover {
+  -webkit-transform: scale(1.13);
+          transform: scale(1.13);
+  color: #de37e4;
 }
 
 #restaurant .palette .test,
@@ -138,9 +179,20 @@ header {
      object-fit: cover;
   height: 117px;
   width: 100%;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  padding: 3px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#restaurant .palette button,
+#restaurant .note button,
+#restaurant .france button,
+#restaurant .sens button {
+  background-color: #77cf91;
+  color: #338a4d;
+  position: relative;
+  left: 245px;
+  bottom: 101px;
+  border: none;
 }
 
 footer {
@@ -208,13 +260,41 @@ footer a {
   color: #de37e4;
 }
 
-.menup .entrep h4, .menup .platp h4, .menup .dessp h4 {
+.menup .entrep h4,
+.menup .platp h4,
+.menup .dessp h4 {
   color: #c4c1c1;
   -webkit-text-decoration: underline #77cf91;
           text-decoration: underline #77cf91;
 }
 
-.menup .entrep .esc, .menup .entrep .foie, .menup .entrep .oeuf, .menup .entrep .filet, .menup .entrep .queue, .menup .entrep .turbot, .menup .entrep .brest, .menup .entrep .macaron, .menup .entrep .mousse, .menup .platp .esc, .menup .platp .foie, .menup .platp .oeuf, .menup .platp .filet, .menup .platp .queue, .menup .platp .turbot, .menup .platp .brest, .menup .platp .macaron, .menup .platp .mousse, .menup .dessp .esc, .menup .dessp .foie, .menup .dessp .oeuf, .menup .dessp .filet, .menup .dessp .queue, .menup .dessp .turbot, .menup .dessp .brest, .menup .dessp .macaron, .menup .dessp .mousse {
+.menup .entrep .esc,
+.menup .entrep .foie,
+.menup .entrep .oeuf,
+.menup .entrep .filet,
+.menup .entrep .queue,
+.menup .entrep .turbot,
+.menup .entrep .brest,
+.menup .entrep .macaron,
+.menup .entrep .mousse,
+.menup .platp .esc,
+.menup .platp .foie,
+.menup .platp .oeuf,
+.menup .platp .filet,
+.menup .platp .queue,
+.menup .platp .turbot,
+.menup .platp .brest,
+.menup .platp .macaron,
+.menup .platp .mousse,
+.menup .dessp .esc,
+.menup .dessp .foie,
+.menup .dessp .oeuf,
+.menup .dessp .filet,
+.menup .dessp .queue,
+.menup .dessp .turbot,
+.menup .dessp .brest,
+.menup .dessp .macaron,
+.menup .dessp .mousse {
   -webkit-box-shadow: 7px 7px 13px 4px #d5d1d1;
           box-shadow: 7px 7px 13px 4px #d5d1d1;
   width: 28%;
@@ -223,19 +303,43 @@ footer a {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   margin-top: 30px;
-  cursor: pointer;
-  -webkit-animation: 4s 1s 1 both apparition;
-          animation: 4s 1s 1 both apparition;
-  -webkit-animation: 4s 1s 1 both decalage;
-          animation: 4s 1s 1 both decalage;
+  -webkit-animation: 1s 1s 1 both apparition;
+          animation: 1s 1s 1 both apparition;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
   position: relative;
+  cursor: pointer;
 }
 
-.menup .entrep .esc i, .menup .entrep .foie i, .menup .entrep .oeuf i, .menup .entrep .filet i, .menup .entrep .queue i, .menup .entrep .turbot i, .menup .entrep .brest i, .menup .entrep .macaron i, .menup .entrep .mousse i, .menup .platp .esc i, .menup .platp .foie i, .menup .platp .oeuf i, .menup .platp .filet i, .menup .platp .queue i, .menup .platp .turbot i, .menup .platp .brest i, .menup .platp .macaron i, .menup .platp .mousse i, .menup .dessp .esc i, .menup .dessp .foie i, .menup .dessp .oeuf i, .menup .dessp .filet i, .menup .dessp .queue i, .menup .dessp .turbot i, .menup .dessp .brest i, .menup .dessp .macaron i, .menup .dessp .mousse i {
+.menup .entrep .esc i,
+.menup .entrep .foie i,
+.menup .entrep .oeuf i,
+.menup .entrep .filet i,
+.menup .entrep .queue i,
+.menup .entrep .turbot i,
+.menup .entrep .brest i,
+.menup .entrep .macaron i,
+.menup .entrep .mousse i,
+.menup .platp .esc i,
+.menup .platp .foie i,
+.menup .platp .oeuf i,
+.menup .platp .filet i,
+.menup .platp .queue i,
+.menup .platp .turbot i,
+.menup .platp .brest i,
+.menup .platp .macaron i,
+.menup .platp .mousse i,
+.menup .dessp .esc i,
+.menup .dessp .foie i,
+.menup .dessp .oeuf i,
+.menup .dessp .filet i,
+.menup .dessp .queue i,
+.menup .dessp .turbot i,
+.menup .dessp .brest i,
+.menup .dessp .macaron i,
+.menup .dessp .mousse i {
   position: absolute;
   top: 7px;
   bottom: 4px;
@@ -243,10 +347,50 @@ footer a {
   opacity: 0;
 }
 
-.menup .entrep .esc .prix, .menup .entrep .foie .prix, .menup .entrep .oeuf .prix, .menup .entrep .filet .prix, .menup .entrep .queue .prix, .menup .entrep .turbot .prix, .menup .entrep .brest .prix, .menup .entrep .macaron .prix, .menup .entrep .mousse .prix, .menup .platp .esc .prix, .menup .platp .foie .prix, .menup .platp .oeuf .prix, .menup .platp .filet .prix, .menup .platp .queue .prix, .menup .platp .turbot .prix, .menup .platp .brest .prix, .menup .platp .macaron .prix, .menup .platp .mousse .prix, .menup .dessp .esc .prix, .menup .dessp .foie .prix, .menup .dessp .oeuf .prix, .menup .dessp .filet .prix, .menup .dessp .queue .prix, .menup .dessp .turbot .prix, .menup .dessp .brest .prix, .menup .dessp .macaron .prix, .menup .dessp .mousse .prix {
+.menup .entrep .esc .prix,
+.menup .entrep .foie .prix,
+.menup .entrep .oeuf .prix,
+.menup .entrep .filet .prix,
+.menup .entrep .queue .prix,
+.menup .entrep .turbot .prix,
+.menup .entrep .brest .prix,
+.menup .entrep .macaron .prix,
+.menup .entrep .mousse .prix,
+.menup .platp .esc .prix,
+.menup .platp .foie .prix,
+.menup .platp .oeuf .prix,
+.menup .platp .filet .prix,
+.menup .platp .queue .prix,
+.menup .platp .turbot .prix,
+.menup .platp .brest .prix,
+.menup .platp .macaron .prix,
+.menup .platp .mousse .prix,
+.menup .dessp .esc .prix,
+.menup .dessp .foie .prix,
+.menup .dessp .oeuf .prix,
+.menup .dessp .filet .prix,
+.menup .dessp .queue .prix,
+.menup .dessp .turbot .prix,
+.menup .dessp .brest .prix,
+.menup .dessp .macaron .prix,
+.menup .dessp .mousse .prix {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.menup .entrep .foie,
+.menup .platp .foie,
+.menup .dessp .foie {
+  -webkit-animation: 1s 2s 1 both apparition;
+          animation: 1s 2s 1 both apparition;
+}
+
+.menup .entrep .oeuf,
+.menup .platp .oeuf,
+.menup .dessp .oeuf {
+  -webkit-animation: 1s 3s 1 both apparition;
+          animation: 1s 3s 1 both apparition;
 }
 
 .esc:hover {
@@ -272,10 +416,11 @@ footer a {
 @-webkit-keyframes apparition {
   from {
     margin-left: 0;
-    margin-top: 0;
+    margin-top: -20px;
+    opacity: 0;
   }
   to {
-    margin-top: 200px;
+    margin-top: 0;
     opacity: 1;
   }
 }
@@ -283,10 +428,11 @@ footer a {
 @keyframes apparition {
   from {
     margin-left: 0;
-    margin-top: 0;
+    margin-top: -20px;
+    opacity: 0;
   }
   to {
-    margin-top: 200px;
+    margin-top: 0;
     opacity: 1;
   }
 }
