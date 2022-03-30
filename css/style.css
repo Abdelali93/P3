@@ -321,11 +321,21 @@ footer a {
   border-bottom-right-radius: 35px;
   color: white;
   background-color: fuchsia;
-  margin: 10px;
+  margin: auto;
   padding: 16px;
   border: none;
   -webkit-box-shadow: 2px 7px 4px 2px #bcb7b7;
           box-shadow: 2px 7px 4px 2px #bcb7b7;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#palette .testp {
+  width: 100%;
 }
 
 #palette .menup {
@@ -349,6 +359,16 @@ footer a {
   -webkit-transform: scale(1.13);
           transform: scale(1.13);
   color: #de37e4;
+}
+
+#palette .menup .entrep,
+#palette .menup .platp,
+#palette .menup .dessp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 #palette .menup .entrep h4,
@@ -388,12 +408,12 @@ footer a {
 #palette .menup .dessp .mousse {
   -webkit-box-shadow: 7px 7px 13px 4px #d5d1d1;
           box-shadow: 7px 7px 13px 4px #d5d1d1;
-  width: 28%;
+  width: 35%;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  margin-top: 30px;
+  padding-left: 30px;
   -webkit-animation: 1s 1s 1 both apparition;
           animation: 1s 1s 1 both apparition;
   -webkit-transition: 0.5s;
@@ -401,41 +421,78 @@ footer a {
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
   position: relative;
+  margin-left: 10px;
   cursor: pointer;
+  height: 150px;
 }
 
-#palette .menup .entrep .esc i,
-#palette .menup .entrep .foie i,
-#palette .menup .entrep .oeuf i,
-#palette .menup .entrep .filet i,
-#palette .menup .entrep .queue i,
-#palette .menup .entrep .turbot i,
-#palette .menup .entrep .brest i,
-#palette .menup .entrep .macaron i,
-#palette .menup .entrep .mousse i,
-#palette .menup .platp .esc i,
-#palette .menup .platp .foie i,
-#palette .menup .platp .oeuf i,
-#palette .menup .platp .filet i,
-#palette .menup .platp .queue i,
-#palette .menup .platp .turbot i,
-#palette .menup .platp .brest i,
-#palette .menup .platp .macaron i,
-#palette .menup .platp .mousse i,
-#palette .menup .dessp .esc i,
-#palette .menup .dessp .foie i,
-#palette .menup .dessp .oeuf i,
-#palette .menup .dessp .filet i,
-#palette .menup .dessp .queue i,
-#palette .menup .dessp .turbot i,
-#palette .menup .dessp .brest i,
-#palette .menup .dessp .macaron i,
-#palette .menup .dessp .mousse i {
-  position: absolute;
-  top: 7px;
-  bottom: 4px;
-  right: 0px;
+#palette .menup .entrep .esc .ok,
+#palette .menup .entrep .foie .ok,
+#palette .menup .entrep .oeuf .ok,
+#palette .menup .entrep .filet .ok,
+#palette .menup .entrep .queue .ok,
+#palette .menup .entrep .turbot .ok,
+#palette .menup .entrep .brest .ok,
+#palette .menup .entrep .macaron .ok,
+#palette .menup .entrep .mousse .ok,
+#palette .menup .platp .esc .ok,
+#palette .menup .platp .foie .ok,
+#palette .menup .platp .oeuf .ok,
+#palette .menup .platp .filet .ok,
+#palette .menup .platp .queue .ok,
+#palette .menup .platp .turbot .ok,
+#palette .menup .platp .brest .ok,
+#palette .menup .platp .macaron .ok,
+#palette .menup .platp .mousse .ok,
+#palette .menup .dessp .esc .ok,
+#palette .menup .dessp .foie .ok,
+#palette .menup .dessp .oeuf .ok,
+#palette .menup .dessp .filet .ok,
+#palette .menup .dessp .queue .ok,
+#palette .menup .dessp .turbot .ok,
+#palette .menup .dessp .brest .ok,
+#palette .menup .dessp .macaron .ok,
+#palette .menup .dessp .mousse .ok {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+  bottom: 130px;
+  left: 268px;
   opacity: 0;
+  width: 20%;
+  height: 150px;
+}
+
+#palette .menup .entrep .esc .ok i,
+#palette .menup .entrep .foie .ok i,
+#palette .menup .entrep .oeuf .ok i,
+#palette .menup .entrep .filet .ok i,
+#palette .menup .entrep .queue .ok i,
+#palette .menup .entrep .turbot .ok i,
+#palette .menup .entrep .brest .ok i,
+#palette .menup .entrep .macaron .ok i,
+#palette .menup .entrep .mousse .ok i,
+#palette .menup .platp .esc .ok i,
+#palette .menup .platp .foie .ok i,
+#palette .menup .platp .oeuf .ok i,
+#palette .menup .platp .filet .ok i,
+#palette .menup .platp .queue .ok i,
+#palette .menup .platp .turbot .ok i,
+#palette .menup .platp .brest .ok i,
+#palette .menup .platp .macaron .ok i,
+#palette .menup .platp .mousse .ok i,
+#palette .menup .dessp .esc .ok i,
+#palette .menup .dessp .foie .ok i,
+#palette .menup .dessp .oeuf .ok i,
+#palette .menup .dessp .filet .ok i,
+#palette .menup .dessp .queue .ok i,
+#palette .menup .dessp .turbot .ok i,
+#palette .menup .dessp .brest .ok i,
+#palette .menup .dessp .macaron .ok i,
+#palette .menup .dessp .mousse .ok i {
+  position: absolute;
+  bottom: 70px;
+  left: 20px;
 }
 
 #palette .menup .entrep .esc .prix,
@@ -503,26 +560,6 @@ footer a {
           animation: 1s 3s 1 both apparition;
 }
 
-#palette .esc:hover {
-  background-color: #77cf91;
-  padding-right: 20px;
-  opacity: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-#palette .esc:hover i {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  position: absolute;
-  top: 7px;
-  bottom: 4px;
-  right: 0px;
-  left: 0;
-  opacity: 1;
-  background-color: #77cf91;
-}
-
 @-webkit-keyframes apparition {
   from {
     margin-left: 0;
@@ -549,22 +586,24 @@ footer a {
 
 @-webkit-keyframes decalage {
   from {
-    margin-right: 0;
-    opacity: 1;
+    padding-left: 33px;
+    opacity: 0;
   }
   to {
-    margin-right: 20px;
+    background-color: #77cf91;
+    padding-left: 0px;
     opacity: 1;
   }
 }
 
 @keyframes decalage {
   from {
-    margin-right: 0;
-    opacity: 1;
+    padding-left: 33px;
+    opacity: 0;
   }
   to {
-    margin-right: 20px;
+    background-color: #77cf91;
+    padding-left: 0px;
     opacity: 1;
   }
 }
@@ -572,13 +611,30 @@ footer a {
 #palette .esc:hover {
   -webkit-animation: 4s 1s 1 both decalage;
           animation: 4s 1s 1 both decalage;
+  padding-left: 100px;
+  width: 25%;
 }
 
-#palette .esc:hover i {
-  background-color: #77cf91;
-  padding-right: 20px;
+#palette .esc:hover .ok {
+  -webkit-animation: 2s 1s 1 both decalage;
+          animation: 2s 1s 1 both decalage;
+  color: #77cf91;
+  padding-left: 20px;
   opacity: 1;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  height: auto;
+}
+
+#palette .esc:hover i {
+  -webkit-animation: 2s 1s 1 both decalage;
+          animation: 2s 1s 1 both decalage;
+  color: #dcebe0;
+  padding-left: 20px;
+  opacity: 1;
+  bottom: 70px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */

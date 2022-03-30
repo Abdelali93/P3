@@ -176,16 +176,16 @@ footer {
     width: 100%;
     justify-content: center;
   }
-  header{
+  header {
     width: 100%;
     box-shadow: 2px 7px 4px 2px #bcb7b7;
-  .logo img {
-    padding-top: 26px;
-    width: 70%;
-    justify-content: center;
-    box-shadow: #c4c1c1;
+    .logo img {
+      padding-top: 26px;
+      width: 70%;
+      justify-content: center;
+      box-shadow: #c4c1c1;
+    }
   }
-}
   #local {
     margin-top: 2px;
     width: 100%;
@@ -213,135 +213,153 @@ footer {
   }
 }
 /*palette*/
-#palette{
-  button { border-bottom-left-radius: 34px;
-  border-top-left-radius: 31px;
-  border-top-right-radius: 32px;
-  border-bottom-right-radius: 35px;
-  color: white;
-  background-color: fuchsia;
-  margin: 10px;
-  padding: 16px;
-  border: none;
-  box-shadow: 2px 7px 4px 2px #bcb7b7;
-}
-.menup {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  margin: 0;
-  h2 {
+#palette {
+  button {
+    border-bottom-left-radius: 34px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 35px;
+    color: white;
+    background-color: fuchsia;
+    margin: auto;
+    padding: 16px;
+    border: none;
+    box-shadow: 2px 7px 4px 2px #bcb7b7;
     justify-content: center;
-    i {
-      background-color: white;
-      border-color: black;
-      &:hover {
-        transform: scale(1.13);
-        color: #de37e4;
-      }
-    }
+    display: flex;
   }
-  .entrep,
-  .platp,
-  .dessp {
-    h4 {
-      color: #c4c1c1;
-      text-decoration: underline #77cf91;
-    }
-
-    .esc,
-    .foie,
-    .oeuf,
-    .filet,
-    .queue,
-    .turbot,
-    .brest,
-    .macaron,
-    .mousse {
-      box-shadow: 7px 7px 13px 4px #d5d1d1;
-      width: 28%;
-      border-top-right-radius: 20px;
-      border-top-left-radius: 20px;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
-      margin-top: 30px;
-      animation: 1s 1s 1 both apparition;
-      transition: 0.5s;
-      transition: all 0.5s linear;
-      position: relative;
-      cursor: pointer;
+  .testp {
+    width: 100%;
+  }
+  .menup {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0;
+    h2 {
+      justify-content: center;
       i {
-        position: absolute;
-        top: 7px;
-        bottom: 4px;
-        right: 0px;
-        opacity: 0;
+        background-color: white;
+        border-color: black;
+        &:hover {
+          transform: scale(1.13);
+          color: #de37e4;
+        }
+      }
+    }
+    .entrep,
+    .platp,
+    .dessp {
+      display: flex;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      h4 {
+        color: #c4c1c1;
+        text-decoration: underline #77cf91;
       }
 
-      .prix {
-        justify-content: flex-end;
+      .esc,
+      .foie,
+      .oeuf,
+      .filet,
+      .queue,
+      .turbot,
+      .brest,
+      .macaron,
+      .mousse {
+        box-shadow: 7px 7px 13px 4px #d5d1d1;
+        width: 35%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding-left: 30px;
+        animation: 1s 1s 1 both apparition;
+        transition: 0.5s;
+        transition: all 0.5s linear;
+        position: relative;
+        margin-left: 10px;
+        cursor: pointer;
+        height: 150px;
+        .ok {
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px;
+          position: relative;
+          bottom: 130px;
+          left: 268px;
+          opacity: 0;
+          width: 20%;
+          height: 150px;
+          i{
+          position: absolute;
+          bottom: 70px;
+          left: 20px;
+          }
+        }
+
+        .prix {
+          justify-content: flex-end;
+        }
+      }
+      .entrep {
+        animation: 1s 1s 1 both apparition;
+      }
+      .filet,
+      .queue,
+      .turbot {
+        animation: 1s 2s 1 both apparition;
+      }
+      .brest,
+      .macaron,
+      .mousse {
+        animation: 1s 3s 1 both apparition;
       }
     }
-    .entrep{
-      animation: 1s 1s 1 both apparition;
+  }
+
+  @keyframes apparition {
+    from {
+      margin-left: 0;
+      margin-top: -20px;
+      opacity: 0;
     }
-    .filet,
-    .queue,
-    .turbot {
-      animation: 1s 2s 1 both apparition;
-    }
-    .brest,
-    .macaron,
-    .mousse {
-      animation: 1s 3s 1 both apparition;
+
+    to {
+      margin-top: 0;
+      opacity: 1;
     }
   }
-}
-.esc:hover {
-  background-color: #77cf91;
-  padding-right: 20px;
-  opacity: 0;
-  transition: 0.3s;
-  i {
+  @keyframes decalage {
+    from {
+      padding-left: 33px;
+      opacity: 0;
+    }
+    to {
+      background-color: #77cf91;
+      padding-left: 0px;
+      opacity: 1;
+    }
+  }
+
+  .esc:hover {
+    animation: 4s 1s 1 both decalage;
+    padding-left: 100px;
+    width: 25%;
+  }
+  .esc:hover .ok {
+    animation: 2s 1s 1 both decalage;
+    color: #77cf91;
+    padding-left: 20px;
+    opacity: 1;
     transition: 0.3s;
-    position: absolute;
-    top: 7px;
-    bottom: 4px;
-    right: 0px;
-    left: 0;
+    height: auto;
+  }
+  .esc:hover i {
+    animation: 2s 1s 1 both decalage;
+    color: #dcebe0;
+    padding-left: 20px;
     opacity: 1;
-    background-color: #77cf91;
+    bottom: 70px;
+    transition: 0.3s;
+    height: auto;
   }
-}
-@keyframes apparition {
-  from {
-    margin-left: 0;
-    margin-top: -20px;
-    opacity: 0;
-  }
-
-  to {
-    margin-top: 0;
-    opacity: 1;
-  }
-}
-@keyframes decalage {
-  from {
-    margin-right: 0;
-    opacity: 1;
-  }
-  to {
-    margin-right: 20px;
-    opacity: 1;
-  }
-}
-
-.esc:hover {
-  animation: 4s 1s 1 both decalage;
-}
-.esc:hover i {
-  background-color: #77cf91;
-  padding-right: 20px;
-  opacity: 1;
-  transition: 0.3s;
-}
 }
