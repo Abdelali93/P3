@@ -337,7 +337,159 @@ footer a {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 10px;
+    width: 95%;
+  }
+  #palette img {
+    margin-top: 0;
+  }
+  #palette .menup {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
+  }
+  #palette .menup .entrep {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #palette .menup .entrep h4 {
+    width: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #palette .menup .entrep .esc,
+  #palette .menup .entrep .foie,
+  #palette .menup .entrep .oeuf {
+    margin-top: 100px;
+    display: block;
+    width: 95%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #palette .menup .entrep .esc .ok,
+  #palette .menup .entrep .foie .ok,
+  #palette .menup .entrep .oeuf .ok {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    bottom: 130px;
+    left: 268px;
+    opacity: 0;
+    width: -20%;
+    height: 150px;
+  }
+  #palette .menup .entrep .esc .ok i,
+  #palette .menup .entrep .foie .ok i,
+  #palette .menup .entrep .oeuf .ok i {
+    position: relative;
+    bottom: 70px;
+    left: 20px;
+  }
+  #palette .menup .platp {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #palette .menup .platp .filet,
+  #palette .menup .platp .queue,
+  #palette .menup .platp .turbot {
+    margin-top: 10px;
+    display: block;
+    width: 95%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #palette .menup .dessp {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #palette .menup .dessp .brest,
+  #palette .menup .dessp .macaron,
+  #palette .menup .dessp .mousse {
+    margin-top: 10px;
+    display: block;
+    width: 95%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  @-webkit-keyframes decalage {
+    from {
+      padding-left: 33px;
+      opacity: 0;
+    }
+    to {
+      background-color: #77cf91;
+      padding-left: 0px;
+      opacity: 1;
+    }
+  }
+  @keyframes decalage {
+    from {
+      padding-left: 33px;
+      opacity: 0;
+    }
+    to {
+      background-color: #77cf91;
+      padding-left: 0px;
+      opacity: 1;
+    }
+  }
+  .esc:hover {
+    -webkit-animation: 4s 1s 1 both decalage;
+            animation: 4s 1s 1 both decalage;
+    padding-left: 100px;
+    width: 25%;
+  }
+  .esc:hover .ok {
+    -webkit-animation: 2s 1s 1 both decalage;
+            animation: 2s 1s 1 both decalage;
+    color: #77cf91;
+    padding-left: 20px;
+    opacity: 1;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    height: auto;
+    margin-right: 50px;
+  }
+  .esc:hover i {
+    -webkit-animation: 2s 1s 1 both decalage;
+            animation: 2s 1s 1 both decalage;
+    color: #dcebe0;
+    padding-left: 20px;
+    opacity: 1;
+    bottom: 70px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    height: auto;
   }
 }
 

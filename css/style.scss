@@ -201,9 +201,8 @@ footer {
     margin-top: 2px;
     width: 100%;
     justify-content: center;
-   
   }
-  #explor{
+  #explor {
     padding: auto;
     justify-content: center;
   }
@@ -218,12 +217,113 @@ footer {
     .france,
     .sens {
       justify-content: center;
-      
       margin-top: 10px;
-      width: 100%;
+      width: 95%;
     }
   }
-  
+  #palette {
+    img {
+      margin-top: 0;
+    }
+    .menup {
+      flex-direction: column;
+      width: 100%;
+      .entrep {
+        width: 100%;
+        flex-direction: column;
+        h4 {
+          width: auto;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .esc,
+        .foie,
+        .oeuf {
+          margin-top: 100px;
+          display: block;
+          width: 95%;
+          flex-direction: column;
+          justify-content: center;
+          .ok {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            position: relative;
+            bottom: 130px;
+            left: 268px;
+            opacity: 0;
+            width: -20%;
+            height: 150px;
+            i {
+              position: relative;
+              bottom: 70px;
+              left: 20px;
+            }
+          }
+        }
+      }
+      .platp {
+        width: 100%;
+        flex-direction: column;
+        .filet,
+        .queue,
+        .turbot {
+          margin-top: 10px;
+          display: block;
+          width: 95%;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+      .dessp {
+        width: 100%;
+        flex-direction: column;
+        .brest,
+        .macaron,
+        .mousse {
+          margin-top: 10px;
+          display: block;
+          width: 95%;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  @keyframes decalage {
+    from {
+      padding-left: 33px;
+      opacity: 0;
+    }
+    to {
+      background-color: #77cf91;
+      padding-left: 0px;
+      opacity: 1;
+    }
+  }
+
+  .esc:hover {
+    animation: 4s 1s 1 both decalage;
+    padding-left: 100px;
+    width: 25%;
+  }
+  .esc:hover .ok {
+    animation: 2s 1s 1 both decalage;
+    color: #77cf91;
+    padding-left: 20px;
+    opacity: 1;
+    transition: 0.3s;
+    height: auto;
+    margin-right: 50px;
+  }
+  .esc:hover i {
+    animation: 2s 1s 1 both decalage;
+    color: #dcebe0;
+    padding-left: 20px;
+    opacity: 1;
+    bottom: 70px;
+    transition: 0.3s;
+    height: auto;
+  }
 }
 .lds-default {
   flex: 1;
