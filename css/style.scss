@@ -29,16 +29,17 @@ body {
   }
 }
 #explor {
-  flex-direction: column;
   background-color: rgb(240, 234, 234);
   margin-top: 0;
+  padding-top: 20px;
   justify-content: center;
-  padding: 50px;
-
+  display: flex;
   h2 {
     margin: 0;
   }
   p {
+    display: flex;
+    justify-content: center;
     color: darkgray;
   }
   button {
@@ -48,10 +49,14 @@ body {
     border-bottom-right-radius: 35px;
     color: white;
     background-color: fuchsia;
-    margin: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 120px;
     padding: 16px;
     border: none;
     box-shadow: 2px 7px 4px 2px #bcb7b7;
+    justify-content: center;
+    display: flex;
   }
 }
 
@@ -98,12 +103,13 @@ body {
   }
 }
 #restaurant {
+  display: flex;
   .palette,
   .note,
   .france,
   .sens {
     box-shadow: 7px 7px 13px 4px #d5d1d1;
-    width: 28%;
+    width: 24%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -112,7 +118,7 @@ body {
     padding: 0;
     cursor: pointer;
     transition: 0.3s;
-
+    margin-right: 20px;
     h3 {
       margin-top: -10px;
       a {
@@ -125,15 +131,20 @@ body {
     }
     i {
       position: relative;
-      left: 285px;
+      left: 260px;
       bottom: 17px;
+      -webkit-text-stroke-color: rgb(10, 10, 10);
+      -webkit-text-stroke-width: 2px;
+      color: white;
       &:hover {
+        -webkit-text-stroke-color: #de37e4;
         transform: scale(1.13);
-        background-color: #de37e4;
+        color: #de37e4;
       }
     }
     .test {
       object-fit: cover;
+      height: 250px;
       width: 100%;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
@@ -148,10 +159,10 @@ body {
     button {
       background-color: #77cf91;
       color: #338a4d;
-      position: relative;
-      left: 245px;
-      bottom: 207px;
+      left: 230px;
+      bottom: 220px;
       border: none;
+      position: relative;
     }
   }
 }
@@ -212,6 +223,91 @@ footer {
     justify-content: center;
   }
 }
+.lds-default {
+  flex: 1;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  padding: 0;
+  margin: 0;
+}
+.lds-default div {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: rgb(129, 128, 128);
+  border-radius: 50%;
+  animation: lds-default 1.2s linear 2 both;
+}
+.lds-default div:nth-child(1) {
+  animation-delay: 0s;
+  top: 37px;
+  left: 66px;
+}
+.lds-default div:nth-child(2) {
+  animation-delay: -0.1s;
+  top: 22px;
+  left: 62px;
+}
+.lds-default div:nth-child(3) {
+  animation-delay: -0.2s;
+  top: 11px;
+  left: 52px;
+}
+.lds-default div:nth-child(4) {
+  animation-delay: -0.3s;
+  top: 7px;
+  left: 37px;
+}
+.lds-default div:nth-child(5) {
+  animation-delay: -0.4s;
+  top: 11px;
+  left: 22px;
+}
+.lds-default div:nth-child(6) {
+  animation-delay: -0.5s;
+  top: 22px;
+  left: 11px;
+}
+.lds-default div:nth-child(7) {
+  animation-delay: -0.6s;
+  top: 37px;
+  left: 7px;
+}
+.lds-default div:nth-child(8) {
+  animation-delay: -0.7s;
+  top: 52px;
+  left: 11px;
+}
+.lds-default div:nth-child(9) {
+  animation-delay: -0.8s;
+  top: 62px;
+  left: 22px;
+}
+.lds-default div:nth-child(10) {
+  animation-delay: -0.9s;
+  top: 66px;
+  left: 37px;
+}
+.lds-default div:nth-child(11) {
+  animation-delay: -1s;
+  top: 62px;
+  left: 52px;
+}
+.lds-default div:nth-child(12) {
+  animation-delay: -1.1s;
+  top: 52px;
+  left: 62px;
+}
+@keyframes lds-default {
+  from {
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
 /*palette*/
 #palette {
   button {
@@ -237,129 +333,149 @@ footer {
     margin: 0;
     h2 {
       justify-content: center;
+
       i {
-        background-color: white;
-        border-color: black;
+        margin-left: 5px;
+        transform: scale(1.13);
+        -webkit-text-stroke-color: rgb(10, 10, 10);
+        -webkit-text-stroke-width: 2px;
+        color: white;
         &:hover {
+          -webkit-text-stroke-color: #de37e4;
           transform: scale(1.13);
           color: #de37e4;
         }
       }
     }
-    .entrep,
-    .platp,
-    .dessp {
-      display: flex;
-      margin-top: 30px;
-      margin-bottom: 30px;
-      h4 {
-        color: #c4c1c1;
-        text-decoration: underline #77cf91;
-      }
+  }
+  .entrep,
+  .platp,
+  .dessp {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    h4 {
+      color: #c4c1c1;
+      text-decoration: underline #77cf91;
+    }
 
-      .esc,
-      .foie,
-      .oeuf,
-      .filet,
-      .queue,
-      .turbot,
-      .brest,
-      .macaron,
-      .mousse {
-        box-shadow: 7px 7px 13px 4px #d5d1d1;
-        width: 35%;
+    .esc,
+    .foie,
+    .oeuf,
+    .filet,
+    .queue,
+    .turbot,
+    .brest,
+    .macaron,
+    .mousse {
+      box-shadow: 7px 7px 13px 4px #d5d1d1;
+      width: 35%;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      padding-left: 30px;
+      animation: 1s 1s 1 both apparition;
+      transition: 0.5s;
+      transition: all 0.5s linear;
+      position: relative;
+      margin-left: 10px;
+      cursor: pointer;
+      height: 150px;
+      .ok {
         border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        padding-left: 30px;
-        animation: 1s 1s 1 both apparition;
-        transition: 0.5s;
-        transition: all 0.5s linear;
         position: relative;
-        margin-left: 10px;
-        cursor: pointer;
+        bottom: 130px;
+        left: 268px;
+        opacity: 0;
+        width: 20%;
         height: 150px;
-        .ok {
-          border-top-right-radius: 20px;
-          border-bottom-right-radius: 20px;
-          position: relative;
-          bottom: 130px;
-          left: 268px;
-          opacity: 0;
-          width: 20%;
-          height: 150px;
-          i{
+        i {
           position: absolute;
           bottom: 70px;
           left: 20px;
-          }
-        }
-
-        .prix {
-          justify-content: flex-end;
         }
       }
-      .entrep {
-        animation: 1s 1s 1 both apparition;
-      }
-      .filet,
-      .queue,
-      .turbot {
-        animation: 1s 2s 1 both apparition;
-      }
-      .brest,
-      .macaron,
-      .mousse {
-        animation: 1s 3s 1 both apparition;
+
+      .prix {
+        justify-content: flex-end;
       }
     }
+    .entrep {
+      animation: 1s 1s 1 both apparition;
+    }
+    .filet,
+    .queue,
+    .turbot {
+      animation: 1s 2s 1 both apparition;
+    }
+    .brest,
+    .macaron,
+    .mousse {
+      animation: 1s 3s 1 both apparition;
+    }
+  }
+}
+
+@keyframes apparition {
+  from {
+    margin-left: 0;
+    margin-top: -20px;
+    opacity: 0;
   }
 
-  @keyframes apparition {
-    from {
-      margin-left: 0;
-      margin-top: -20px;
-      opacity: 0;
-    }
-
-    to {
-      margin-top: 0;
-      opacity: 1;
-    }
-  }
-  @keyframes decalage {
-    from {
-      padding-left: 33px;
-      opacity: 0;
-    }
-    to {
-      background-color: #77cf91;
-      padding-left: 0px;
-      opacity: 1;
-    }
-  }
-
-  .esc:hover {
-    animation: 4s 1s 1 both decalage;
-    padding-left: 100px;
-    width: 25%;
-  }
-  .esc:hover .ok {
-    animation: 2s 1s 1 both decalage;
-    color: #77cf91;
-    padding-left: 20px;
+  to {
+    margin-top: 0;
     opacity: 1;
-    transition: 0.3s;
-    height: auto;
   }
-  .esc:hover i {
-    animation: 2s 1s 1 both decalage;
-    color: #dcebe0;
-    padding-left: 20px;
+}
+@keyframes decalage {
+  from {
+    padding-left: 33px;
+    opacity: 0;
+  }
+  to {
+    background-color: #77cf91;
+    padding-left: 0px;
     opacity: 1;
-    bottom: 70px;
-    transition: 0.3s;
-    height: auto;
+  }
+}
+
+.esc:hover {
+  animation: 4s 1s 1 both decalage;
+  padding-left: 100px;
+  width: 25%;
+}
+.esc:hover .ok {
+  animation: 2s 1s 1 both decalage;
+  color: #77cf91;
+  padding-left: 20px;
+  opacity: 1;
+  transition: 0.3s;
+  height: auto;
+}
+.esc:hover i {
+  animation: 2s 1s 1 both decalage;
+  color: #dcebe0;
+  padding-left: 20px;
+  opacity: 1;
+  bottom: 70px;
+  transition: 0.3s;
+  height: auto;
+}
+
+footer {
+  background-color: $couleursecondaire;
+  color: white;
+  flex-direction: column;
+  display: flex;
+  padding-left: 15px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  a {
+    color: white;
+    text-decoration: none;
+    padding-top: 5px;
   }
 }

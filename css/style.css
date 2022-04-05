@@ -55,16 +55,15 @@ body {
 }
 
 #explor {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background-color: #f0eaea;
   margin-top: 0;
+  padding-top: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #explor h2 {
@@ -72,6 +71,12 @@ body {
 }
 
 #explor p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: darkgray;
 }
 
@@ -82,11 +87,19 @@ body {
   border-bottom-right-radius: 35px;
   color: white;
   background-color: fuchsia;
-  margin: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 120px;
   padding: 16px;
   border: none;
   -webkit-box-shadow: 2px 7px 4px 2px #bcb7b7;
           box-shadow: 2px 7px 4px 2px #bcb7b7;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #fonction {
@@ -136,13 +149,19 @@ body {
   color: violet;
 }
 
+#restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #restaurant .palette,
 #restaurant .note,
 #restaurant .france,
 #restaurant .sens {
   -webkit-box-shadow: 7px 7px 13px 4px #d5d1d1;
           box-shadow: 7px 7px 13px 4px #d5d1d1;
-  width: 28%;
+  width: 24%;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -152,6 +171,7 @@ body {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  margin-right: 20px;
 }
 
 #restaurant .palette h3,
@@ -181,17 +201,21 @@ body {
 #restaurant .france i,
 #restaurant .sens i {
   position: relative;
-  left: 285px;
+  left: 260px;
   bottom: 17px;
+  -webkit-text-stroke-color: #0a0a0a;
+  -webkit-text-stroke-width: 2px;
+  color: white;
 }
 
 #restaurant .palette i:hover,
 #restaurant .note i:hover,
 #restaurant .france i:hover,
 #restaurant .sens i:hover {
+  -webkit-text-stroke-color: #de37e4;
   -webkit-transform: scale(1.13);
           transform: scale(1.13);
-  background-color: #de37e4;
+  color: #de37e4;
 }
 
 #restaurant .palette .test,
@@ -200,6 +224,7 @@ body {
 #restaurant .sens .test {
   -o-object-fit: cover;
      object-fit: cover;
+  height: 250px;
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -223,10 +248,10 @@ body {
 #restaurant .sens button {
   background-color: #77cf91;
   color: #338a4d;
-  position: relative;
-  left: 245px;
-  bottom: 207px;
+  left: 230px;
+  bottom: 220px;
   border: none;
+  position: relative;
 }
 
 footer {
@@ -313,6 +338,135 @@ footer a {
   }
 }
 
+.lds-default {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  padding: 0;
+  margin: 0;
+}
+
+.lds-default div {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #818080;
+  border-radius: 50%;
+  -webkit-animation: lds-default 1.2s linear 2 both;
+          animation: lds-default 1.2s linear 2 both;
+}
+
+.lds-default div:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  top: 37px;
+  left: 66px;
+}
+
+.lds-default div:nth-child(2) {
+  -webkit-animation-delay: -0.1s;
+          animation-delay: -0.1s;
+  top: 22px;
+  left: 62px;
+}
+
+.lds-default div:nth-child(3) {
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+  top: 11px;
+  left: 52px;
+}
+
+.lds-default div:nth-child(4) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+  top: 7px;
+  left: 37px;
+}
+
+.lds-default div:nth-child(5) {
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+  top: 11px;
+  left: 22px;
+}
+
+.lds-default div:nth-child(6) {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+  top: 22px;
+  left: 11px;
+}
+
+.lds-default div:nth-child(7) {
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+  top: 37px;
+  left: 7px;
+}
+
+.lds-default div:nth-child(8) {
+  -webkit-animation-delay: -0.7s;
+          animation-delay: -0.7s;
+  top: 52px;
+  left: 11px;
+}
+
+.lds-default div:nth-child(9) {
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+  top: 62px;
+  left: 22px;
+}
+
+.lds-default div:nth-child(10) {
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s;
+  top: 66px;
+  left: 37px;
+}
+
+.lds-default div:nth-child(11) {
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+  top: 62px;
+  left: 52px;
+}
+
+.lds-default div:nth-child(12) {
+  -webkit-animation-delay: -1.1s;
+          animation-delay: -1.1s;
+  top: 52px;
+  left: 62px;
+}
+
+@-webkit-keyframes lds-default {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@keyframes lds-default {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
 /*palette*/
 #palette button {
   border-bottom-left-radius: 34px;
@@ -351,19 +505,24 @@ footer a {
 }
 
 #palette .menup h2 i {
-  background-color: white;
-  border-color: black;
+  margin-left: 5px;
+  -webkit-transform: scale(1.13);
+          transform: scale(1.13);
+  -webkit-text-stroke-color: #0a0a0a;
+  -webkit-text-stroke-width: 2px;
+  color: white;
 }
 
 #palette .menup h2 i:hover {
+  -webkit-text-stroke-color: #de37e4;
   -webkit-transform: scale(1.13);
           transform: scale(1.13);
   color: #de37e4;
 }
 
-#palette .menup .entrep,
-#palette .menup .platp,
-#palette .menup .dessp {
+#palette .entrep,
+#palette .platp,
+#palette .dessp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -371,41 +530,41 @@ footer a {
   margin-bottom: 30px;
 }
 
-#palette .menup .entrep h4,
-#palette .menup .platp h4,
-#palette .menup .dessp h4 {
+#palette .entrep h4,
+#palette .platp h4,
+#palette .dessp h4 {
   color: #c4c1c1;
   -webkit-text-decoration: underline #77cf91;
           text-decoration: underline #77cf91;
 }
 
-#palette .menup .entrep .esc,
-#palette .menup .entrep .foie,
-#palette .menup .entrep .oeuf,
-#palette .menup .entrep .filet,
-#palette .menup .entrep .queue,
-#palette .menup .entrep .turbot,
-#palette .menup .entrep .brest,
-#palette .menup .entrep .macaron,
-#palette .menup .entrep .mousse,
-#palette .menup .platp .esc,
-#palette .menup .platp .foie,
-#palette .menup .platp .oeuf,
-#palette .menup .platp .filet,
-#palette .menup .platp .queue,
-#palette .menup .platp .turbot,
-#palette .menup .platp .brest,
-#palette .menup .platp .macaron,
-#palette .menup .platp .mousse,
-#palette .menup .dessp .esc,
-#palette .menup .dessp .foie,
-#palette .menup .dessp .oeuf,
-#palette .menup .dessp .filet,
-#palette .menup .dessp .queue,
-#palette .menup .dessp .turbot,
-#palette .menup .dessp .brest,
-#palette .menup .dessp .macaron,
-#palette .menup .dessp .mousse {
+#palette .entrep .esc,
+#palette .entrep .foie,
+#palette .entrep .oeuf,
+#palette .entrep .filet,
+#palette .entrep .queue,
+#palette .entrep .turbot,
+#palette .entrep .brest,
+#palette .entrep .macaron,
+#palette .entrep .mousse,
+#palette .platp .esc,
+#palette .platp .foie,
+#palette .platp .oeuf,
+#palette .platp .filet,
+#palette .platp .queue,
+#palette .platp .turbot,
+#palette .platp .brest,
+#palette .platp .macaron,
+#palette .platp .mousse,
+#palette .dessp .esc,
+#palette .dessp .foie,
+#palette .dessp .oeuf,
+#palette .dessp .filet,
+#palette .dessp .queue,
+#palette .dessp .turbot,
+#palette .dessp .brest,
+#palette .dessp .macaron,
+#palette .dessp .mousse {
   -webkit-box-shadow: 7px 7px 13px 4px #d5d1d1;
           box-shadow: 7px 7px 13px 4px #d5d1d1;
   width: 35%;
@@ -426,33 +585,33 @@ footer a {
   height: 150px;
 }
 
-#palette .menup .entrep .esc .ok,
-#palette .menup .entrep .foie .ok,
-#palette .menup .entrep .oeuf .ok,
-#palette .menup .entrep .filet .ok,
-#palette .menup .entrep .queue .ok,
-#palette .menup .entrep .turbot .ok,
-#palette .menup .entrep .brest .ok,
-#palette .menup .entrep .macaron .ok,
-#palette .menup .entrep .mousse .ok,
-#palette .menup .platp .esc .ok,
-#palette .menup .platp .foie .ok,
-#palette .menup .platp .oeuf .ok,
-#palette .menup .platp .filet .ok,
-#palette .menup .platp .queue .ok,
-#palette .menup .platp .turbot .ok,
-#palette .menup .platp .brest .ok,
-#palette .menup .platp .macaron .ok,
-#palette .menup .platp .mousse .ok,
-#palette .menup .dessp .esc .ok,
-#palette .menup .dessp .foie .ok,
-#palette .menup .dessp .oeuf .ok,
-#palette .menup .dessp .filet .ok,
-#palette .menup .dessp .queue .ok,
-#palette .menup .dessp .turbot .ok,
-#palette .menup .dessp .brest .ok,
-#palette .menup .dessp .macaron .ok,
-#palette .menup .dessp .mousse .ok {
+#palette .entrep .esc .ok,
+#palette .entrep .foie .ok,
+#palette .entrep .oeuf .ok,
+#palette .entrep .filet .ok,
+#palette .entrep .queue .ok,
+#palette .entrep .turbot .ok,
+#palette .entrep .brest .ok,
+#palette .entrep .macaron .ok,
+#palette .entrep .mousse .ok,
+#palette .platp .esc .ok,
+#palette .platp .foie .ok,
+#palette .platp .oeuf .ok,
+#palette .platp .filet .ok,
+#palette .platp .queue .ok,
+#palette .platp .turbot .ok,
+#palette .platp .brest .ok,
+#palette .platp .macaron .ok,
+#palette .platp .mousse .ok,
+#palette .dessp .esc .ok,
+#palette .dessp .foie .ok,
+#palette .dessp .oeuf .ok,
+#palette .dessp .filet .ok,
+#palette .dessp .queue .ok,
+#palette .dessp .turbot .ok,
+#palette .dessp .brest .ok,
+#palette .dessp .macaron .ok,
+#palette .dessp .mousse .ok {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   position: relative;
@@ -463,99 +622,99 @@ footer a {
   height: 150px;
 }
 
-#palette .menup .entrep .esc .ok i,
-#palette .menup .entrep .foie .ok i,
-#palette .menup .entrep .oeuf .ok i,
-#palette .menup .entrep .filet .ok i,
-#palette .menup .entrep .queue .ok i,
-#palette .menup .entrep .turbot .ok i,
-#palette .menup .entrep .brest .ok i,
-#palette .menup .entrep .macaron .ok i,
-#palette .menup .entrep .mousse .ok i,
-#palette .menup .platp .esc .ok i,
-#palette .menup .platp .foie .ok i,
-#palette .menup .platp .oeuf .ok i,
-#palette .menup .platp .filet .ok i,
-#palette .menup .platp .queue .ok i,
-#palette .menup .platp .turbot .ok i,
-#palette .menup .platp .brest .ok i,
-#palette .menup .platp .macaron .ok i,
-#palette .menup .platp .mousse .ok i,
-#palette .menup .dessp .esc .ok i,
-#palette .menup .dessp .foie .ok i,
-#palette .menup .dessp .oeuf .ok i,
-#palette .menup .dessp .filet .ok i,
-#palette .menup .dessp .queue .ok i,
-#palette .menup .dessp .turbot .ok i,
-#palette .menup .dessp .brest .ok i,
-#palette .menup .dessp .macaron .ok i,
-#palette .menup .dessp .mousse .ok i {
+#palette .entrep .esc .ok i,
+#palette .entrep .foie .ok i,
+#palette .entrep .oeuf .ok i,
+#palette .entrep .filet .ok i,
+#palette .entrep .queue .ok i,
+#palette .entrep .turbot .ok i,
+#palette .entrep .brest .ok i,
+#palette .entrep .macaron .ok i,
+#palette .entrep .mousse .ok i,
+#palette .platp .esc .ok i,
+#palette .platp .foie .ok i,
+#palette .platp .oeuf .ok i,
+#palette .platp .filet .ok i,
+#palette .platp .queue .ok i,
+#palette .platp .turbot .ok i,
+#palette .platp .brest .ok i,
+#palette .platp .macaron .ok i,
+#palette .platp .mousse .ok i,
+#palette .dessp .esc .ok i,
+#palette .dessp .foie .ok i,
+#palette .dessp .oeuf .ok i,
+#palette .dessp .filet .ok i,
+#palette .dessp .queue .ok i,
+#palette .dessp .turbot .ok i,
+#palette .dessp .brest .ok i,
+#palette .dessp .macaron .ok i,
+#palette .dessp .mousse .ok i {
   position: absolute;
   bottom: 70px;
   left: 20px;
 }
 
-#palette .menup .entrep .esc .prix,
-#palette .menup .entrep .foie .prix,
-#palette .menup .entrep .oeuf .prix,
-#palette .menup .entrep .filet .prix,
-#palette .menup .entrep .queue .prix,
-#palette .menup .entrep .turbot .prix,
-#palette .menup .entrep .brest .prix,
-#palette .menup .entrep .macaron .prix,
-#palette .menup .entrep .mousse .prix,
-#palette .menup .platp .esc .prix,
-#palette .menup .platp .foie .prix,
-#palette .menup .platp .oeuf .prix,
-#palette .menup .platp .filet .prix,
-#palette .menup .platp .queue .prix,
-#palette .menup .platp .turbot .prix,
-#palette .menup .platp .brest .prix,
-#palette .menup .platp .macaron .prix,
-#palette .menup .platp .mousse .prix,
-#palette .menup .dessp .esc .prix,
-#palette .menup .dessp .foie .prix,
-#palette .menup .dessp .oeuf .prix,
-#palette .menup .dessp .filet .prix,
-#palette .menup .dessp .queue .prix,
-#palette .menup .dessp .turbot .prix,
-#palette .menup .dessp .brest .prix,
-#palette .menup .dessp .macaron .prix,
-#palette .menup .dessp .mousse .prix {
+#palette .entrep .esc .prix,
+#palette .entrep .foie .prix,
+#palette .entrep .oeuf .prix,
+#palette .entrep .filet .prix,
+#palette .entrep .queue .prix,
+#palette .entrep .turbot .prix,
+#palette .entrep .brest .prix,
+#palette .entrep .macaron .prix,
+#palette .entrep .mousse .prix,
+#palette .platp .esc .prix,
+#palette .platp .foie .prix,
+#palette .platp .oeuf .prix,
+#palette .platp .filet .prix,
+#palette .platp .queue .prix,
+#palette .platp .turbot .prix,
+#palette .platp .brest .prix,
+#palette .platp .macaron .prix,
+#palette .platp .mousse .prix,
+#palette .dessp .esc .prix,
+#palette .dessp .foie .prix,
+#palette .dessp .oeuf .prix,
+#palette .dessp .filet .prix,
+#palette .dessp .queue .prix,
+#palette .dessp .turbot .prix,
+#palette .dessp .brest .prix,
+#palette .dessp .macaron .prix,
+#palette .dessp .mousse .prix {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
-#palette .menup .entrep .entrep,
-#palette .menup .platp .entrep,
-#palette .menup .dessp .entrep {
+#palette .entrep .entrep,
+#palette .platp .entrep,
+#palette .dessp .entrep {
   -webkit-animation: 1s 1s 1 both apparition;
           animation: 1s 1s 1 both apparition;
 }
 
-#palette .menup .entrep .filet,
-#palette .menup .entrep .queue,
-#palette .menup .entrep .turbot,
-#palette .menup .platp .filet,
-#palette .menup .platp .queue,
-#palette .menup .platp .turbot,
-#palette .menup .dessp .filet,
-#palette .menup .dessp .queue,
-#palette .menup .dessp .turbot {
+#palette .entrep .filet,
+#palette .entrep .queue,
+#palette .entrep .turbot,
+#palette .platp .filet,
+#palette .platp .queue,
+#palette .platp .turbot,
+#palette .dessp .filet,
+#palette .dessp .queue,
+#palette .dessp .turbot {
   -webkit-animation: 1s 2s 1 both apparition;
           animation: 1s 2s 1 both apparition;
 }
 
-#palette .menup .entrep .brest,
-#palette .menup .entrep .macaron,
-#palette .menup .entrep .mousse,
-#palette .menup .platp .brest,
-#palette .menup .platp .macaron,
-#palette .menup .platp .mousse,
-#palette .menup .dessp .brest,
-#palette .menup .dessp .macaron,
-#palette .menup .dessp .mousse {
+#palette .entrep .brest,
+#palette .entrep .macaron,
+#palette .entrep .mousse,
+#palette .platp .brest,
+#palette .platp .macaron,
+#palette .platp .mousse,
+#palette .dessp .brest,
+#palette .dessp .macaron,
+#palette .dessp .mousse {
   -webkit-animation: 1s 3s 1 both apparition;
           animation: 1s 3s 1 both apparition;
 }
@@ -608,14 +767,14 @@ footer a {
   }
 }
 
-#palette .esc:hover {
+.esc:hover {
   -webkit-animation: 4s 1s 1 both decalage;
           animation: 4s 1s 1 both decalage;
   padding-left: 100px;
   width: 25%;
 }
 
-#palette .esc:hover .ok {
+.esc:hover .ok {
   -webkit-animation: 2s 1s 1 both decalage;
           animation: 2s 1s 1 both decalage;
   color: #77cf91;
@@ -626,7 +785,7 @@ footer a {
   height: auto;
 }
 
-#palette .esc:hover i {
+.esc:hover i {
   -webkit-animation: 2s 1s 1 both decalage;
           animation: 2s 1s 1 both decalage;
   color: #dcebe0;
@@ -636,5 +795,26 @@ footer a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   height: auto;
+}
+
+footer {
+  background-color: #0e0101;
+  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 15px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  padding-top: 5px;
 }
 /*# sourceMappingURL=style.css.map */
