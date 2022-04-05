@@ -304,8 +304,12 @@ footer a {
   #local {
     margin-top: 2px;
     width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  #local i {
+  #explor {
+    padding: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -315,26 +319,25 @@ footer a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #restaurant {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
   }
   #restaurant .palette,
   #restaurant .note,
   #restaurant .france,
   #restaurant .sens {
-    margin-left: 10px;
-    margin-top: 10px;
-    width: 100%;
-  }
-  .explorer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 10px;
+    width: 100%;
   }
 }
 

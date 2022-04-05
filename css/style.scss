@@ -200,28 +200,30 @@ footer {
   #local {
     margin-top: 2px;
     width: 100%;
-    i {
-      justify-content: center;
-    }
+    justify-content: center;
+   
+  }
+  #explor{
+    padding: auto;
+    justify-content: center;
   }
   #fonction {
     flex-direction: column;
+    justify-content: center;
   }
   #restaurant {
     flex-direction: column;
-    width: 100%;
     .palette,
     .note,
     .france,
     .sens {
-      margin-left: 10px;
+      justify-content: center;
+      
       margin-top: 10px;
       width: 100%;
     }
   }
-  .explorer {
-    justify-content: center;
-  }
+  
 }
 .lds-default {
   flex: 1;
