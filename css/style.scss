@@ -9,15 +9,15 @@ body {
   margin: 30px;
 }
 .logo {
-  display: flex;
-  justify-content: center;
+  padding: 17px 0px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
 }
-#local {
+.local {
   background-color: $couleurprincipal;
   color: $couleursecondaire;
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
   input {
     background-color: $couleurprincipal;
     border: transparent;
@@ -28,8 +28,8 @@ body {
     color: black;
   }
 }
-#explor {
-  background-color: rgb(240, 234, 234);
+.explor {
+  background-color: #f9f9f9;
   margin-top: 0;
   padding-top: 20px;
   justify-content: center;
@@ -43,12 +43,16 @@ body {
     color: darkgray;
   }
   button {
+    
     border-bottom-left-radius: 34px;
     border-top-left-radius: 31px;
     border-top-right-radius: 32px;
     border-bottom-right-radius: 35px;
     color: white;
-    background-color: fuchsia;
+    background-color: #9356DC  ;
+    filter: contrast(#FF79DA);
+    filter: hue-rotate(10deg);
+    font-weight: bold;
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 120px;
@@ -60,7 +64,7 @@ body {
   }
 }
 
-#fonction {
+.fonction {
   display: flex;
 
   div {
@@ -80,7 +84,7 @@ body {
     span {
       width: 20px;
       border-radius: 15px;
-      background-color: rgb(212, 83, 212);
+      background-color: #9356DC ;
       color: white;
       position: relative;
       padding-left: 8px;
@@ -102,7 +106,7 @@ body {
     color: violet;
   }
 }
-#restaurant {
+.restaurant {
   display: flex;
   .palette,
   .note,
@@ -180,7 +184,7 @@ footer {
     padding-top: 5px;
   }
 }
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   body {
     margin: 0;
     flex-direction: column;
@@ -191,26 +195,25 @@ footer {
     width: 100%;
     box-shadow: 2px 7px 4px 2px #bcb7b7;
     .logo img {
-      padding-top: 26px;
-      width: 70%;
-      justify-content: center;
+      width: 50%;
+      display: inline-block;
+      vertical-align: middle;
       box-shadow: #c4c1c1;
     }
   }
-  #local {
+  .local {
     margin-top: 2px;
-    width: 100%;
-    justify-content: center;
+    padding: 15px 0px;
   }
-  #explor {
+  .explor {
     padding: auto;
     justify-content: center;
   }
-  #fonction {
+  .fonction {
     flex-direction: column;
     justify-content: center;
   }
-  #restaurant {
+  .restaurant {
     flex-direction: column;
     .palette,
     .note,

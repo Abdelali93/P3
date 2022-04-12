@@ -10,27 +10,19 @@ body {
 }
 
 .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 17px 0px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
 }
 
-#local {
+.local {
   background-color: #dfdddd;
   color: #0e0101;
-  margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
 }
 
-#local input {
+.local input {
   background-color: #dfdddd;
   border: transparent;
   -webkit-box-pack: center;
@@ -38,24 +30,24 @@ body {
           justify-content: center;
 }
 
-#local ::-webkit-input-placeholder {
+.local ::-webkit-input-placeholder {
   color: black;
 }
 
-#local :-ms-input-placeholder {
+.local :-ms-input-placeholder {
   color: black;
 }
 
-#local ::-ms-input-placeholder {
+.local ::-ms-input-placeholder {
   color: black;
 }
 
-#local ::placeholder {
+.local ::placeholder {
   color: black;
 }
 
-#explor {
-  background-color: #f0eaea;
+.explor {
+  background-color: #f9f9f9;
   margin-top: 0;
   padding-top: 20px;
   -webkit-box-pack: center;
@@ -66,11 +58,11 @@ body {
   display: flex;
 }
 
-#explor h2 {
+.explor h2 {
   margin: 0;
 }
 
-#explor p {
+.explor p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,13 +72,18 @@ body {
   color: darkgray;
 }
 
-#explor button {
+.explor button {
   border-bottom-left-radius: 34px;
   border-top-left-radius: 31px;
   border-top-right-radius: 32px;
   border-bottom-right-radius: 35px;
   color: white;
-  background-color: fuchsia;
+  background-color: #9356DC;
+  -webkit-filter: contrast(#FF79DA);
+          filter: contrast(#FF79DA);
+  -webkit-filter: hue-rotate(10deg);
+          filter: hue-rotate(10deg);
+  font-weight: bold;
   margin-top: 30px;
   margin-bottom: 30px;
   margin-left: 120px;
@@ -102,13 +99,13 @@ body {
   display: flex;
 }
 
-#fonction {
+.fonction {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#fonction div {
+.fonction div {
   background: #f1f1f1;
   -webkit-box-shadow: 2px 7px 4px 2px #e7e4e4;
           box-shadow: 2px 7px 4px 2px #e7e4e4;
@@ -124,10 +121,10 @@ body {
   padding: 35px;
 }
 
-#fonction div span {
+.fonction div span {
   width: 20px;
   border-radius: 15px;
-  background-color: #d453d4;
+  background-color: #9356DC;
   color: white;
   position: relative;
   padding-left: 8px;
@@ -136,29 +133,29 @@ body {
   right: 42px;
 }
 
-#fonction .choix i,
-#fonction .menu i {
+.fonction .choix i,
+.fonction .menu i {
   margin-left: -23px;
   margin-right: 20px;
   color: #b6b6b6;
 }
 
-#fonction .deguste i {
+.fonction .deguste i {
   margin-left: -23px;
   margin-right: 20px;
   color: violet;
 }
 
-#restaurant {
+.restaurant {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#restaurant .palette,
-#restaurant .note,
-#restaurant .france,
-#restaurant .sens {
+.restaurant .palette,
+.restaurant .note,
+.restaurant .france,
+.restaurant .sens {
   -webkit-box-shadow: 7px 7px 13px 4px #d5d1d1;
           box-shadow: 7px 7px 13px 4px #d5d1d1;
   width: 24%;
@@ -174,32 +171,32 @@ body {
   margin-right: 20px;
 }
 
-#restaurant .palette h3,
-#restaurant .note h3,
-#restaurant .france h3,
-#restaurant .sens h3 {
+.restaurant .palette h3,
+.restaurant .note h3,
+.restaurant .france h3,
+.restaurant .sens h3 {
   margin-top: -10px;
 }
 
-#restaurant .palette h3 a,
-#restaurant .note h3 a,
-#restaurant .france h3 a,
-#restaurant .sens h3 a {
+.restaurant .palette h3 a,
+.restaurant .note h3 a,
+.restaurant .france h3 a,
+.restaurant .sens h3 a {
   text-decoration: none;
   color: black;
 }
 
-#restaurant .palette .desc,
-#restaurant .note .desc,
-#restaurant .france .desc,
-#restaurant .sens .desc {
+.restaurant .palette .desc,
+.restaurant .note .desc,
+.restaurant .france .desc,
+.restaurant .sens .desc {
   padding-left: 15px;
 }
 
-#restaurant .palette i,
-#restaurant .note i,
-#restaurant .france i,
-#restaurant .sens i {
+.restaurant .palette i,
+.restaurant .note i,
+.restaurant .france i,
+.restaurant .sens i {
   position: relative;
   left: 260px;
   bottom: 17px;
@@ -208,20 +205,20 @@ body {
   color: white;
 }
 
-#restaurant .palette i:hover,
-#restaurant .note i:hover,
-#restaurant .france i:hover,
-#restaurant .sens i:hover {
+.restaurant .palette i:hover,
+.restaurant .note i:hover,
+.restaurant .france i:hover,
+.restaurant .sens i:hover {
   -webkit-text-stroke-color: #de37e4;
   -webkit-transform: scale(1.13);
           transform: scale(1.13);
   color: #de37e4;
 }
 
-#restaurant .palette .test,
-#restaurant .note .test,
-#restaurant .france .test,
-#restaurant .sens .test {
+.restaurant .palette .test,
+.restaurant .note .test,
+.restaurant .france .test,
+.restaurant .sens .test {
   -o-object-fit: cover;
      object-fit: cover;
   height: 250px;
@@ -230,10 +227,10 @@ body {
   border-top-right-radius: 20px;
 }
 
-#restaurant .palette .testn,
-#restaurant .note .testn,
-#restaurant .france .testn,
-#restaurant .sens .testn {
+.restaurant .palette .testn,
+.restaurant .note .testn,
+.restaurant .france .testn,
+.restaurant .sens .testn {
   -o-object-fit: cover;
      object-fit: cover;
   height: 250px;
@@ -242,10 +239,10 @@ body {
   border-top-right-radius: 20px;
 }
 
-#restaurant .palette button,
-#restaurant .note button,
-#restaurant .france button,
-#restaurant .sens button {
+.restaurant .palette button,
+.restaurant .note button,
+.restaurant .france button,
+.restaurant .sens button {
   background-color: #77cf91;
   color: #338a4d;
   left: 230px;
@@ -275,7 +272,7 @@ footer a {
   padding-top: 5px;
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   body {
     margin: 0;
     -webkit-box-orient: vertical;
@@ -293,28 +290,23 @@ footer a {
             box-shadow: 2px 7px 4px 2px #bcb7b7;
   }
   header .logo img {
-    padding-top: 26px;
-    width: 70%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
     -webkit-box-shadow: #c4c1c1;
             box-shadow: #c4c1c1;
   }
-  #local {
+  .local {
     margin-top: 2px;
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    padding: 15px 0px;
   }
-  #explor {
+  .explor {
     padding: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #fonction {
+  .fonction {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -323,16 +315,16 @@ footer a {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #restaurant {
+  .restaurant {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #restaurant .palette,
-  #restaurant .note,
-  #restaurant .france,
-  #restaurant .sens {
+  .restaurant .palette,
+  .restaurant .note,
+  .restaurant .france,
+  .restaurant .sens {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
