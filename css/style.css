@@ -1,5 +1,5 @@
 * {
-  font-family: "Raleway";
+  font-family: "Roboto";
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -49,13 +49,8 @@ body {
 .explor {
   background-color: #f9f9f9;
   margin-top: 0;
-  padding-top: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 32px;
+  text-align: center;
 }
 
 .explor h2 {
@@ -63,12 +58,6 @@ body {
 }
 
 .explor p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   color: #999696;
 }
 
@@ -78,56 +67,43 @@ body {
   border-top-right-radius: 32px;
   border-bottom-right-radius: 35px;
   color: white;
-  background: #7d22c3;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(125, 34, 195, 0.964321)), to(#fd2df9));
-  background: linear-gradient(0deg, rgba(125, 34, 195, 0.964321) 0%, #fd2df9 100%);
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   font-weight: bold;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 120px;
+  margin-top: 1px;
+  margin-bottom: 7px;
   padding: 16px;
   border: none;
-  -webkit-box-shadow: 2px 7px 10px 2px #bcb7b7;
-          box-shadow: 2px 7px 10px 2px #bcb7b7;
+  -webkit-box-shadow: 0px 5px 5px 0px #dbdbdb;
+          box-shadow: 0px 5px 5px 0px #dbdbdb;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .fonction {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 40px 26px;
 }
 
 .fonction div {
   background: #f1f1f1;
   -webkit-box-shadow: 0px 4px 9px 2px #e7e4e4;
           box-shadow: 0px 4px 9px 2px #e7e4e4;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 20px;
   margin-bottom: 20px;
-  margin-left: 20px;
   margin-top: 20px;
-  height: 85px;
-  width: 300px;
-  padding: 35px;
+  padding: 30px;
 }
 
 .fonction div span {
-  width: 20px;
-  border-radius: 15px;
+  border-radius: 50%;
   background-color: #9356DC;
   color: white;
   position: relative;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 5px;
+  padding-top: 5px;
   right: 42px;
 }
 
@@ -145,28 +121,26 @@ body {
 }
 
 .restaurant {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 8px 13px;
+  background-color: #f2f2f296;
 }
 
 .restaurant .palette,
 .restaurant .note,
 .restaurant .france,
 .restaurant .sens {
-  -webkit-box-shadow: 7px 7px 13px 4px #d5d1d1;
-          box-shadow: 7px 7px 13px 4px #d5d1d1;
-  width: 24%;
+  -webkit-box-shadow: 0px 7px 14px 0px #d5d1d1;
+          box-shadow: 0px 7px 14px 0px #d5d1d1;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  margin-top: 30px;
   padding: 0;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin-right: 20px;
+  background-color: white;
 }
 
 .restaurant .palette h3,
@@ -174,6 +148,7 @@ body {
 .restaurant .france h3,
 .restaurant .sens h3 {
   margin-top: -10px;
+  margin-bottom: 5px;
 }
 
 .restaurant .palette h3 a,
@@ -191,13 +166,21 @@ body {
   padding-left: 15px;
 }
 
+.restaurant .palette .desc p,
+.restaurant .note .desc p,
+.restaurant .france .desc p,
+.restaurant .sens .desc p {
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
 .restaurant .palette i,
 .restaurant .note i,
 .restaurant .france i,
 .restaurant .sens i {
   position: relative;
-  left: 260px;
-  bottom: 17px;
+  left: 270px;
+  bottom: 30px;
   -webkit-text-stroke-color: #0a0a0a;
   -webkit-text-stroke-width: 2px;
   color: white;
@@ -219,8 +202,8 @@ body {
 .restaurant .sens .test {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 250px;
   width: 100%;
+  height: 170px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -231,26 +214,24 @@ body {
 .restaurant .sens .testn {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 250px;
+  height: 170px;
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 
-.restaurant .palette button,
-.restaurant .note button,
-.restaurant .france button,
-.restaurant .sens button {
-  background-color: #77cf91;
-  color: #338a4d;
-  left: 230px;
-  bottom: 220px;
+.bouton {
+  background-color: #99E2D0;
+  color: #278870;
+  font-weight: 500;
+  left: 257px;
+  bottom: 165px;
   border: none;
   position: relative;
 }
 
 footer {
-  background-color: #0e0101;
+  background-color: #2b2a2a;
   color: white;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -259,15 +240,23 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 15px;
+  padding-left: 30px;
   margin-top: 30px;
   padding-bottom: 20px;
+}
+
+footer h3 {
+  font-family: Shrikhand;
 }
 
 footer a {
   color: white;
   text-decoration: none;
-  padding-top: 5px;
+  padding-bottom: 6px;
+}
+
+footer a i {
+  padding-right: 8px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -284,8 +273,6 @@ footer a {
   }
   header {
     width: 100%;
-    -webkit-box-shadow: 2px 7px 4px 2px #bcb7b7;
-            box-shadow: 2px 7px 4px 2px #bcb7b7;
   }
   header .logo img {
     width: 50%;
@@ -298,20 +285,11 @@ footer a {
     margin-top: 2px;
     padding: 15px 0px;
   }
-  .explor {
-    padding: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .fonction {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .restaurant {
     -webkit-box-orient: vertical;
@@ -326,27 +304,37 @@ footer a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 10px;
+    margin-top: 20px;
     width: 95%;
   }
-  #palette img {
+  img {
+    width: 100%;
+  }
+  .palette {
+    background-color: #97979714;
+    margin-top: 0;
+    padding: 0px 23px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .palette .menup {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .palette .menup h2 {
     margin-top: 0;
   }
-  #palette .menup {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-  }
-  #palette .menup .entrep {
+  .palette .menup .entrep {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #palette .menup .entrep h4 {
+  .palette .menup .entrep h4 {
     width: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -356,12 +344,12 @@ footer a {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #palette .menup .entrep .esc,
-  #palette .menup .entrep .foie,
-  #palette .menup .entrep .oeuf {
-    margin-top: 100px;
+  .palette .menup .entrep .esc,
+  .palette .menup .entrep .foie,
+  .palette .menup .entrep .oeuf {
+    margin-top: 10px;
     display: block;
-    width: 95%;
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -370,9 +358,16 @@ footer a {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #palette .menup .entrep .esc .ok,
-  #palette .menup .entrep .foie .ok,
-  #palette .menup .entrep .oeuf .ok {
+  .palette .menup .entrep .esc .prix,
+  .palette .menup .entrep .foie .prix,
+  .palette .menup .entrep .oeuf .prix {
+    position: relative;
+    left: 223px;
+    bottom: 35px;
+  }
+  .palette .menup .entrep .esc .ok,
+  .palette .menup .entrep .foie .ok,
+  .palette .menup .entrep .oeuf .ok {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     position: relative;
@@ -380,25 +375,25 @@ footer a {
     left: 268px;
     opacity: 0;
     width: -20%;
-    height: 150px;
   }
-  #palette .menup .entrep .esc .ok i,
-  #palette .menup .entrep .foie .ok i,
-  #palette .menup .entrep .oeuf .ok i {
+  .palette .menup .entrep .esc .ok i,
+  .palette .menup .entrep .foie .ok i,
+  .palette .menup .entrep .oeuf .ok i {
+    color: #97979714;
     position: relative;
     bottom: 70px;
     left: 20px;
   }
-  #palette .menup .platp {
+  .palette .menup .platp {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #palette .menup .platp .filet,
-  #palette .menup .platp .queue,
-  #palette .menup .platp .turbot {
+  .palette .menup .platp .filet,
+  .palette .menup .platp .queue,
+  .palette .menup .platp .turbot {
     margin-top: 10px;
     display: block;
     width: 95%;
@@ -410,16 +405,16 @@ footer a {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #palette .menup .dessp {
+  .palette .menup .dessp {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #palette .menup .dessp .brest,
-  #palette .menup .dessp .macaron,
-  #palette .menup .dessp .mousse {
+  .palette .menup .dessp .brest,
+  .palette .menup .dessp .macaron,
+  .palette .menup .dessp .mousse {
     margin-top: 10px;
     display: block;
     width: 95%;
@@ -613,43 +608,40 @@ footer a {
 }
 
 /*palette*/
-#palette button {
-  border-bottom-left-radius: 34px;
-  border-top-left-radius: 31px;
-  border-top-right-radius: 32px;
-  border-bottom-right-radius: 35px;
-  color: white;
-  background-color: fuchsia;
-  margin: auto;
-  padding: 16px;
-  border: none;
-  -webkit-box-shadow: 2px 7px 4px 2px #bcb7b7;
-          box-shadow: 2px 7px 4px 2px #bcb7b7;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.palette {
+  /*button {
+    border-bottom-left-radius: 34px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 35px;
+    color: white;
+    background-color: fuchsia;
+    margin: auto;
+    padding: 16px;
+    border: none;
+    box-shadow: 2px 7px 4px 2px #bcb7b7;
+    justify-content: center;
+    display: flex;
+  }*/
 }
 
-#palette .testp {
+.palette .testp {
   width: 100%;
 }
 
-#palette .menup {
+.palette .menup {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   margin: 0;
 }
 
-#palette .menup h2 {
+.palette .menup h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-#palette .menup h2 i {
+.palette .menup h2 i {
   margin-left: 5px;
   -webkit-transform: scale(1.13);
           transform: scale(1.13);
@@ -658,16 +650,16 @@ footer a {
   color: white;
 }
 
-#palette .menup h2 i:hover {
+.palette .menup h2 i:hover {
   -webkit-text-stroke-color: #de37e4;
   -webkit-transform: scale(1.13);
           transform: scale(1.13);
   color: #de37e4;
 }
 
-#palette .entrep,
-#palette .platp,
-#palette .dessp {
+.palette .entrep,
+.palette .platp,
+.palette .dessp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -675,41 +667,41 @@ footer a {
   margin-bottom: 30px;
 }
 
-#palette .entrep h4,
-#palette .platp h4,
-#palette .dessp h4 {
+.palette .entrep h4,
+.palette .platp h4,
+.palette .dessp h4 {
   color: #c4c1c1;
-  -webkit-text-decoration: underline #77cf91;
-          text-decoration: underline #77cf91;
+  -webkit-text-decoration: underline #99E2D0;
+          text-decoration: underline #99E2D0;
 }
 
-#palette .entrep .esc,
-#palette .entrep .foie,
-#palette .entrep .oeuf,
-#palette .entrep .filet,
-#palette .entrep .queue,
-#palette .entrep .turbot,
-#palette .entrep .brest,
-#palette .entrep .macaron,
-#palette .entrep .mousse,
-#palette .platp .esc,
-#palette .platp .foie,
-#palette .platp .oeuf,
-#palette .platp .filet,
-#palette .platp .queue,
-#palette .platp .turbot,
-#palette .platp .brest,
-#palette .platp .macaron,
-#palette .platp .mousse,
-#palette .dessp .esc,
-#palette .dessp .foie,
-#palette .dessp .oeuf,
-#palette .dessp .filet,
-#palette .dessp .queue,
-#palette .dessp .turbot,
-#palette .dessp .brest,
-#palette .dessp .macaron,
-#palette .dessp .mousse {
+.palette .entrep .esc,
+.palette .entrep .foie,
+.palette .entrep .oeuf,
+.palette .entrep .filet,
+.palette .entrep .queue,
+.palette .entrep .turbot,
+.palette .entrep .brest,
+.palette .entrep .macaron,
+.palette .entrep .mousse,
+.palette .platp .esc,
+.palette .platp .foie,
+.palette .platp .oeuf,
+.palette .platp .filet,
+.palette .platp .queue,
+.palette .platp .turbot,
+.palette .platp .brest,
+.palette .platp .macaron,
+.palette .platp .mousse,
+.palette .dessp .esc,
+.palette .dessp .foie,
+.palette .dessp .oeuf,
+.palette .dessp .filet,
+.palette .dessp .queue,
+.palette .dessp .turbot,
+.palette .dessp .brest,
+.palette .dessp .macaron,
+.palette .dessp .mousse {
   -webkit-box-shadow: 7px 7px 13px 4px #d5d1d1;
           box-shadow: 7px 7px 13px 4px #d5d1d1;
   width: 35%;
@@ -717,7 +709,7 @@ footer a {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  padding-left: 30px;
+  padding-left: 10px;
   -webkit-animation: 1s 1s 1 both apparition;
           animation: 1s 1s 1 both apparition;
   -webkit-transition: 0.5s;
@@ -727,36 +719,36 @@ footer a {
   position: relative;
   margin-left: 10px;
   cursor: pointer;
-  height: 150px;
+  height: 98px;
 }
 
-#palette .entrep .esc .ok,
-#palette .entrep .foie .ok,
-#palette .entrep .oeuf .ok,
-#palette .entrep .filet .ok,
-#palette .entrep .queue .ok,
-#palette .entrep .turbot .ok,
-#palette .entrep .brest .ok,
-#palette .entrep .macaron .ok,
-#palette .entrep .mousse .ok,
-#palette .platp .esc .ok,
-#palette .platp .foie .ok,
-#palette .platp .oeuf .ok,
-#palette .platp .filet .ok,
-#palette .platp .queue .ok,
-#palette .platp .turbot .ok,
-#palette .platp .brest .ok,
-#palette .platp .macaron .ok,
-#palette .platp .mousse .ok,
-#palette .dessp .esc .ok,
-#palette .dessp .foie .ok,
-#palette .dessp .oeuf .ok,
-#palette .dessp .filet .ok,
-#palette .dessp .queue .ok,
-#palette .dessp .turbot .ok,
-#palette .dessp .brest .ok,
-#palette .dessp .macaron .ok,
-#palette .dessp .mousse .ok {
+.palette .entrep .esc .ok,
+.palette .entrep .foie .ok,
+.palette .entrep .oeuf .ok,
+.palette .entrep .filet .ok,
+.palette .entrep .queue .ok,
+.palette .entrep .turbot .ok,
+.palette .entrep .brest .ok,
+.palette .entrep .macaron .ok,
+.palette .entrep .mousse .ok,
+.palette .platp .esc .ok,
+.palette .platp .foie .ok,
+.palette .platp .oeuf .ok,
+.palette .platp .filet .ok,
+.palette .platp .queue .ok,
+.palette .platp .turbot .ok,
+.palette .platp .brest .ok,
+.palette .platp .macaron .ok,
+.palette .platp .mousse .ok,
+.palette .dessp .esc .ok,
+.palette .dessp .foie .ok,
+.palette .dessp .oeuf .ok,
+.palette .dessp .filet .ok,
+.palette .dessp .queue .ok,
+.palette .dessp .turbot .ok,
+.palette .dessp .brest .ok,
+.palette .dessp .macaron .ok,
+.palette .dessp .mousse .ok {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   position: relative;
@@ -767,99 +759,99 @@ footer a {
   height: 150px;
 }
 
-#palette .entrep .esc .ok i,
-#palette .entrep .foie .ok i,
-#palette .entrep .oeuf .ok i,
-#palette .entrep .filet .ok i,
-#palette .entrep .queue .ok i,
-#palette .entrep .turbot .ok i,
-#palette .entrep .brest .ok i,
-#palette .entrep .macaron .ok i,
-#palette .entrep .mousse .ok i,
-#palette .platp .esc .ok i,
-#palette .platp .foie .ok i,
-#palette .platp .oeuf .ok i,
-#palette .platp .filet .ok i,
-#palette .platp .queue .ok i,
-#palette .platp .turbot .ok i,
-#palette .platp .brest .ok i,
-#palette .platp .macaron .ok i,
-#palette .platp .mousse .ok i,
-#palette .dessp .esc .ok i,
-#palette .dessp .foie .ok i,
-#palette .dessp .oeuf .ok i,
-#palette .dessp .filet .ok i,
-#palette .dessp .queue .ok i,
-#palette .dessp .turbot .ok i,
-#palette .dessp .brest .ok i,
-#palette .dessp .macaron .ok i,
-#palette .dessp .mousse .ok i {
+.palette .entrep .esc .ok i,
+.palette .entrep .foie .ok i,
+.palette .entrep .oeuf .ok i,
+.palette .entrep .filet .ok i,
+.palette .entrep .queue .ok i,
+.palette .entrep .turbot .ok i,
+.palette .entrep .brest .ok i,
+.palette .entrep .macaron .ok i,
+.palette .entrep .mousse .ok i,
+.palette .platp .esc .ok i,
+.palette .platp .foie .ok i,
+.palette .platp .oeuf .ok i,
+.palette .platp .filet .ok i,
+.palette .platp .queue .ok i,
+.palette .platp .turbot .ok i,
+.palette .platp .brest .ok i,
+.palette .platp .macaron .ok i,
+.palette .platp .mousse .ok i,
+.palette .dessp .esc .ok i,
+.palette .dessp .foie .ok i,
+.palette .dessp .oeuf .ok i,
+.palette .dessp .filet .ok i,
+.palette .dessp .queue .ok i,
+.palette .dessp .turbot .ok i,
+.palette .dessp .brest .ok i,
+.palette .dessp .macaron .ok i,
+.palette .dessp .mousse .ok i {
   position: absolute;
   bottom: 70px;
   left: 20px;
 }
 
-#palette .entrep .esc .prix,
-#palette .entrep .foie .prix,
-#palette .entrep .oeuf .prix,
-#palette .entrep .filet .prix,
-#palette .entrep .queue .prix,
-#palette .entrep .turbot .prix,
-#palette .entrep .brest .prix,
-#palette .entrep .macaron .prix,
-#palette .entrep .mousse .prix,
-#palette .platp .esc .prix,
-#palette .platp .foie .prix,
-#palette .platp .oeuf .prix,
-#palette .platp .filet .prix,
-#palette .platp .queue .prix,
-#palette .platp .turbot .prix,
-#palette .platp .brest .prix,
-#palette .platp .macaron .prix,
-#palette .platp .mousse .prix,
-#palette .dessp .esc .prix,
-#palette .dessp .foie .prix,
-#palette .dessp .oeuf .prix,
-#palette .dessp .filet .prix,
-#palette .dessp .queue .prix,
-#palette .dessp .turbot .prix,
-#palette .dessp .brest .prix,
-#palette .dessp .macaron .prix,
-#palette .dessp .mousse .prix {
+.palette .entrep .esc .prix,
+.palette .entrep .foie .prix,
+.palette .entrep .oeuf .prix,
+.palette .entrep .filet .prix,
+.palette .entrep .queue .prix,
+.palette .entrep .turbot .prix,
+.palette .entrep .brest .prix,
+.palette .entrep .macaron .prix,
+.palette .entrep .mousse .prix,
+.palette .platp .esc .prix,
+.palette .platp .foie .prix,
+.palette .platp .oeuf .prix,
+.palette .platp .filet .prix,
+.palette .platp .queue .prix,
+.palette .platp .turbot .prix,
+.palette .platp .brest .prix,
+.palette .platp .macaron .prix,
+.palette .platp .mousse .prix,
+.palette .dessp .esc .prix,
+.palette .dessp .foie .prix,
+.palette .dessp .oeuf .prix,
+.palette .dessp .filet .prix,
+.palette .dessp .queue .prix,
+.palette .dessp .turbot .prix,
+.palette .dessp .brest .prix,
+.palette .dessp .macaron .prix,
+.palette .dessp .mousse .prix {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
-#palette .entrep .entrep,
-#palette .platp .entrep,
-#palette .dessp .entrep {
+.palette .entrep .entrep,
+.palette .platp .entrep,
+.palette .dessp .entrep {
   -webkit-animation: 1s 1s 1 both apparition;
           animation: 1s 1s 1 both apparition;
 }
 
-#palette .entrep .filet,
-#palette .entrep .queue,
-#palette .entrep .turbot,
-#palette .platp .filet,
-#palette .platp .queue,
-#palette .platp .turbot,
-#palette .dessp .filet,
-#palette .dessp .queue,
-#palette .dessp .turbot {
+.palette .entrep .filet,
+.palette .entrep .queue,
+.palette .entrep .turbot,
+.palette .platp .filet,
+.palette .platp .queue,
+.palette .platp .turbot,
+.palette .dessp .filet,
+.palette .dessp .queue,
+.palette .dessp .turbot {
   -webkit-animation: 1s 2s 1 both apparition;
           animation: 1s 2s 1 both apparition;
 }
 
-#palette .entrep .brest,
-#palette .entrep .macaron,
-#palette .entrep .mousse,
-#palette .platp .brest,
-#palette .platp .macaron,
-#palette .platp .mousse,
-#palette .dessp .brest,
-#palette .dessp .macaron,
-#palette .dessp .mousse {
+.palette .entrep .brest,
+.palette .entrep .macaron,
+.palette .entrep .mousse,
+.palette .platp .brest,
+.palette .platp .macaron,
+.palette .platp .mousse,
+.palette .dessp .brest,
+.palette .dessp .macaron,
+.palette .dessp .mousse {
   -webkit-animation: 1s 3s 1 both apparition;
           animation: 1s 3s 1 both apparition;
 }
@@ -940,26 +932,5 @@ footer a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   height: auto;
-}
-
-footer {
-  background-color: #0e0101;
-  color: white;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 15px;
-  margin-top: 30px;
-  padding-bottom: 20px;
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
-  padding-top: 5px;
 }
 /*# sourceMappingURL=style.css.map */

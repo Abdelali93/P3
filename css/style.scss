@@ -1,5 +1,5 @@
 * {
-  font-family: "Raleway";
+  font-family: "Roboto";
   box-sizing: border-box;
 }
 /*variables*/
@@ -31,15 +31,12 @@ body {
 .explor {
   background-color: #f9f9f9;
   margin-top: 0;
-  padding-top: 20px;
-  justify-content: center;
-  display: flex;
+  padding: 32px;
+  text-align: center;
   h2 {
     margin: 0;
   }
   p {
-    display: flex;
-    justify-content: center;
     color: #999696;
   }
   button {
@@ -49,47 +46,38 @@ body {
     border-top-right-radius: 32px;
     border-bottom-right-radius: 35px;
     color: white;
-    background: rgb(125,34,195);
-    background: linear-gradient(0deg, rgba(125,34,195,0.9643207624846813) 0%, rgba(253,45,249,1) 100%);
+    background: linear-gradient(to bottom right,  #FF79DA , #9356DC);
     font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 120px;
+    margin-top: 1px;
+    margin-bottom: 7px;
     padding: 16px;
     border: none;
-    box-shadow: 2px 7px 10px 2px #bcb7b7;
+    box-shadow: 0px 5px 5px 0px #dbdbdb;
     justify-content: center;
-    display: flex;
 
   }
 }
 
 .fonction {
-  display: flex;
+  padding: 40px 26px;
 
   div {
     background: #f1f1f1;
     box-shadow: 0px 4px 9px 2px #e7e4e4;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 20px;
     margin-bottom: 20px;
-    margin-left: 20px;
     margin-top: 20px;
-    height: 85px;
-    width: 300px;
-    padding: 35px;
+    padding: 30px;
 
     span {
-      width: 20px;
-      border-radius: 15px;
+      border-radius: 50%;
       background-color: #9356DC ;
       color: white;
       position: relative;
-      padding-left: 8px;
-      padding-right: 8px;
+      padding-left: 10px;
+      padding-right: 10px;
       padding-bottom: 5px;
+      padding-top: 5px;
       right: 42px;
     }
   }
@@ -107,36 +95,42 @@ body {
   }
 }
 .restaurant {
-  display: flex;
+  padding: 8px 13px;
+  background-color: #f2f2f296;
   .palette,
   .note,
   .france,
   .sens {
-    box-shadow: 7px 7px 13px 4px #d5d1d1;
-    width: 24%;
+    box-shadow: 0px 7px 14px 0px #d5d1d1;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    margin-top: 30px;
     padding: 0;
     cursor: pointer;
     transition: 0.3s;
     margin-right: 20px;
+    background-color: white;
     h3 {
       margin-top: -10px;
+      margin-bottom: 5px;
       a {
         text-decoration: none;
         color: black;
       }
+      
     }
     .desc {
       padding-left: 15px;
+      p{
+        margin-top: 4px;
+        margin-bottom: 0;
+      }
     }
     i {
       position: relative;
-      left: 260px;
-      bottom: 17px;
+      left: 270px;
+      bottom: 30px;
       -webkit-text-stroke-color: rgb(10, 10, 10);
       -webkit-text-stroke-width: 2px;
       color: white;
@@ -148,40 +142,50 @@ body {
     }
     .test {
       object-fit: cover;
-      height: 250px;
       width: 100%;
+      height: 170px;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
     }
     .testn {
       object-fit: cover;
-      height: 250px;
+      height: 170px;
       width: 100%;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
     }
-    button {
-      background-color: #77cf91;
-      color: #338a4d;
-      left: 230px;
-      bottom: 220px;
-      border: none;
-      position: relative;
-    }
+    
   }
+  
+}
+.bouton{
+  background-color: #99E2D0;
+  color: #278870  ;
+  font-weight: 500;
+  left: 257px;
+  bottom: 165px;
+  border: none;
+  position: relative;
 }
 footer {
-  background-color: $couleursecondaire;
+  background-color: #2b2a2a ;
   color: white;
   flex-direction: column;
   display: flex;
-  padding-left: 15px;
+  padding-left: 30px;
   margin-top: 30px;
   padding-bottom: 20px;
+  h3{
+    font-family: Shrikhand;
+  }
   a {
     color: white;
     text-decoration: none;
-    padding-top: 5px;
+    padding-bottom: 6px;
+
+    i{
+      padding-right: 8px;
+    }
   }
 }
 @media only screen and (max-width: 767px) {
@@ -193,7 +197,6 @@ footer {
   }
   header {
     width: 100%;
-    box-shadow: 2px 7px 4px 2px #bcb7b7;
     .logo img {
       width: 50%;
       display: inline-block;
@@ -205,13 +208,8 @@ footer {
     margin-top: 2px;
     padding: 15px 0px;
   }
-  .explor {
-    padding: auto;
-    justify-content: center;
-  }
   .fonction {
     flex-direction: column;
-    justify-content: center;
   }
   .restaurant {
     flex-direction: column;
@@ -220,17 +218,26 @@ footer {
     .france,
     .sens {
       justify-content: center;
-      margin-top: 10px;
+      margin-top: 20px;
       width: 95%;
     }
   }
-  #palette {
-    img {
-      margin-top: 0;
-    }
+  img {
+    width: 100%;
+  }
+  .palette {
+    background-color: #97979714;
+    margin-top: 0;
+    padding: 0px 23px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     .menup {
       flex-direction: column;
       width: 100%;
+      h2{
+
+        margin-top: 0;
+      }
       .entrep {
         width: 100%;
         flex-direction: column;
@@ -242,11 +249,16 @@ footer {
         .esc,
         .foie,
         .oeuf {
-          margin-top: 100px;
+          margin-top: 10px;
           display: block;
-          width: 95%;
+          width: 100%;
           flex-direction: column;
           justify-content: center;
+          .prix{
+            position: relative;
+            left: 223px;
+            bottom: 35px;
+          }
           .ok {
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
@@ -255,12 +267,13 @@ footer {
             left: 268px;
             opacity: 0;
             width: -20%;
-            height: 150px;
             i {
+              color: #97979714;
               position: relative;
               bottom: 70px;
               left: 20px;
             }
+           
           }
         }
       }
@@ -414,8 +427,8 @@ footer {
   }
 }
 /*palette*/
-#palette {
-  button {
+.palette {
+ /*button {
     border-bottom-left-radius: 34px;
     border-top-left-radius: 31px;
     border-top-right-radius: 32px;
@@ -428,7 +441,7 @@ footer {
     box-shadow: 2px 7px 4px 2px #bcb7b7;
     justify-content: center;
     display: flex;
-  }
+  }*/
   .testp {
     width: 100%;
   }
@@ -461,7 +474,8 @@ footer {
     margin-bottom: 30px;
     h4 {
       color: #c4c1c1;
-      text-decoration: underline #77cf91;
+      text-decoration: underline #99E2D0
+      ;
     }
 
     .esc,
@@ -479,14 +493,14 @@ footer {
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
-      padding-left: 30px;
+      padding-left: 10px;
       animation: 1s 1s 1 both apparition;
       transition: 0.5s;
       transition: all 0.5s linear;
       position: relative;
       margin-left: 10px;
       cursor: pointer;
-      height: 150px;
+      height: 98px;
       .ok {
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
@@ -570,17 +584,4 @@ footer {
   height: auto;
 }
 
-footer {
-  background-color: $couleursecondaire;
-  color: white;
-  flex-direction: column;
-  display: flex;
-  padding-left: 15px;
-  margin-top: 30px;
-  padding-bottom: 20px;
-  a {
-    color: white;
-    text-decoration: none;
-    padding-top: 5px;
-  }
-}
+
